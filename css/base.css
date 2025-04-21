@@ -1,0 +1,29 @@
+/* ============================
+   🌐 Estilo Global e Reset
+=============================== */
+body {
+    background-color: var(--color-bg-cream);
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-primary);
+    padding-top: 90px;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Bebas Neue', cursive;
+    color: var(--color-primary-burgundy);
+   
+  }
+  
+  a {
+    color: var(--color-primary-mustard);
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+  
+  a:hover {
+    color: var(--hover-mustard-dark);
+  }
+  
+.nav-link{
+    letter-spacing: 1px !important;
+}

@@ -1,0 +1,59 @@
+/* 🖼️ Hero Banner */
+.hero-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55); /* escurecido */
+    z-index: 1;
+  }
+  
+  .hero-text {
+    z-index: 2;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    max-width: 700px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.75rem;
+  }
+  
+  .hero-text p.lead {
+    font-size: 1.25rem;
+    opacity: 0.95;
+  }
+  
+  .hero-info {
+    font-size: 0.95rem;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 0.75rem;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    text-align: left;
+    margin-top: 1.5rem;
+  }
+  
+  .hero-info p {
+    margin-bottom: 0.3rem;
+    color: #fff;
+  }
+  
+  .hero-info .status {
+    color: #00d67f; /* Verde vibrante pro status "Aberto agora" */
+  }
+  
+  .hero-info .ver-mais {
+    color: #ffc107;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .hero-info .ver-mais:hover {
+    text-decoration: underline;
+  }
+  

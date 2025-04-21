@@ -1,0 +1,174 @@
+ /* ================================
+   🎯 RESPONSIVO HEADER
+   ================================ */
+
+/* === Responsividade do Hero Banner === */
+
+/* 1024px */
+@media (max-width: 1024px) {
+    .hero-text h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-text p.lead {
+      font-size: 1.125rem;
+    }
+  
+    .hero-info {
+      font-size: 0.9rem;
+      padding: 1rem;
+    }
+  }
+  
+  /* 768px */
+  @media (max-width: 768px) {
+    .hero-img {
+      height: 80vh;
+    }
+  
+    .hero-text h1 {
+      font-size: 2.25rem;
+    }
+  
+    .hero-text p.lead {
+      font-size: 1rem;
+    }
+  
+    .hero-info {
+      font-size: 0.85rem;
+      padding: 0.85rem 1rem;
+    }
+  }
+  
+  /* 425px */
+  @media (max-width: 425px) {
+    .hero-img {
+      height: 70vh;
+    }
+  
+    .hero-text h1 {
+      font-size: 1.75rem;
+    }
+  
+    .hero-text p.lead {
+      font-size: 0.95rem;
+    }
+  
+    .hero-info {
+      font-size: 0.8rem;
+      padding: 0.75rem;
+    }
+  }
+  
+  /* 375px */
+  @media (max-width: 375px) {
+    .hero-img {
+      height: 65vh;
+    }
+  
+    .hero-text h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero-text p.lead {
+      font-size: 0.875rem;
+    }
+  
+    .hero-info {
+      font-size: 0.75rem;
+      padding: 0.7rem;
+    }
+  }
+  
+  /* 320px */
+  @media (max-width: 320px) {
+    .hero-img {
+      height: 60vh;
+    }
+  
+    .hero-text h1 {
+      font-size: 1.35rem;
+    }
+  
+    .hero-text p.lead {
+      font-size: 0.8rem;
+    }
+  
+    .hero-info {
+      font-size: 0.7rem;
+      padding: 0.6rem;
+    }
+  }
+  
+  /* === Responsividade do Modal de Informações === */
+/* 1024px */
+@media (max-width: 1024px) {
+  #modalHorario .modal-content {
+    padding: 1.5rem;
+  }
+
+  #modalHorario .modal-body {
+    font-size: 0.95rem;
+  }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+  #modalHorario .modal-dialog {
+    margin: 1rem auto;
+  }
+
+  #modalHorario .modal-body {
+    font-size: 0.9rem;
+  }
+
+  #modalHorario iframe {
+    height: 220px;
+  }
+}
+
+/* 425px */
+@media (max-width: 425px) {
+  #modalHorario .modal-content {
+    border-radius: var(--radius-sm);
+    padding: 1rem;
+  }
+
+  #modalHorario .modal-body {
+    font-size: 0.85rem;
+  }
+
+  #modalHorario iframe {
+    height: 200px;
+  }
+
+  #modalHorario h6 {
+    font-size: 1rem;
+  }
+}
+
+/* 375px */
+@media (max-width: 375px) {
+  #modalHorario .modal-body {
+    font-size: 0.8rem;
+  }
+
+  #modalHorario iframe {
+    height: 180px;
+  }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+  #modalHorario .modal-body {
+    font-size: 0.75rem;
+  }
+
+  #modalHorario iframe {
+    height: 160px;
+  }
+
+  #modalHorario h6 {
+    font-size: 0.95rem;
+  }
+}

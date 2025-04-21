@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cardápio online de uma hamburgueria artesanal - rústico e moderno">
+  <title>Hamburgueria Rústica</title>
+
+  <!-- Bootstrap & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- 🌐 Header Fixo -->
+  <header class="fixed-top">
+    <nav class="navbar navbar-dark">
+      <div class="container-fluid" style="max-width: 1024px;">
+
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#inicio">
+          <img src="./assets/img/logo/logo.svg" alt="Logo da Hamburgueria" width="140" height="50" class="me-2">
+        </a>
+
+        <!-- Botão Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <img src="./assets/img/logo/logo.svg" alt="Logo da Hamburgueria" width="140" height="50">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-5">
+
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  🍽️ Cardápio
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="menuDropdown">
+                  <li><a class="dropdown-item" href="#inicio">🍱 Combos</a></li>
+                  <li><a class="dropdown-item" href="#cardapio">🍔 Lanches</a></li>
+                  <li><a class="dropdown-item" href="#combos">🍟 Porções</a></li>
+                  <li><a class="dropdown-item" href="#sobre">🥤 Bebidas</a></li>
+                  <li><a class="dropdown-item" href="#contato">🍰 Sobremesas</a></li>
+                </ul>
+              </li>
+
+              <!-- Links simples -->
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">🧑‍🍳 Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">📞 Contato</a>
+              </li>
+             <!-- Redes sociais estilizadas -->
+              <li class="nav-item mt-4 d-flex gap-3 justify-content-center">
+                <div class="d-flex gap-3 justify-content-center">
+                  <a href="https://www.instagram.com/sua_hamburgueria" target="_blank" class="Btn btn-instagram" aria-label="Instagram">
+                    <span class="svgContainer">
+                      <i class="bi bi-instagram fs-4"></i>
+                    </span>
+                    <span class="BG"></span>
+                  </a>
+                  <a href="https://www.facebook.com/sua_hamburgueria" target="_blank" class="Btn btn-facebook" aria-label="Facebook">
+                    <span class="svgContainer">
+                      <i class="bi bi-facebook fs-4"></i>
+                    </span>
+                    <span class="BG"></span>
+                  </a>
+                  <a href="https://wa.me/SEUNUMERO" target="_blank" class="Btn btn-whatsapp" aria-label="WhatsApp">
+                    <span class="svgContainer">
+                      <i class="bi bi-whatsapp fs-4"></i>
+                    </span>
+                    <span class="BG"></span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container" style="width:100%;">
+      <!-- 🎯 Hero Banner -->
+      <section id="hero" class="position-relative text-center d-flex align-items-center justify-content-center">
+        <img src="./assets/img/banner/banner.png" alt="Banner Hamburgueria" class="hero-img">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-text container position-absolute">
+          <h1 class="display-4 fw-bold">Sabor Rústico, Alma Artesanal</h1>
+          <p class="lead">Hambúrgueres feitos à mão, com ingredientes selecionados</p>
+
+          <div class="hero-info mt-4">
+            
+            <p class="status"><i class="bi bi-check-circle-fill me-1"></i> Aberto agora</p>
+            <p><i class="bi bi-clock-fill me-1"></i> 40-50min 
+              <a href="#" class="ver-mais" data-bs-toggle="modal" data-bs-target="#modalHorario">● Ver mais</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- 🕓 Modal - Informações completas -->
+      <div class="modal fade" id="modalHorario" tabindex="-1" aria-labelledby="modalHorarioLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+          <div class="modal-content" style="border-radius: var(--radius-md);">
+            <div class="modal-header bg-dark text-white">
+              <h5 class="modal-title" id="modalHorarioLabel">Informações do Estabelecimento</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+              <!-- 🕒 Horários -->
+              <h6 class="fw-bold">Horários de Funcionamento</h6>
+              <ul class="list-unstyled small mb-3">
+                <li><strong>DOM:</strong> 18:00 às 23:50</li>
+                <li><strong>SEG:</strong> 10:30 às 22:50</li>
+                <li><strong>TER a SÁB:</strong> 10:30 às 23:50</li>
+              </ul>
+
+              <!-- ☎️ Telefone -->
+              <h6 class="fw-bold">Telefone</h6>
+              <p class="small mb-3">(47) 99998-8640</p>
+
+              <!-- 📍 Endereço com Mapa -->
+              <h6 class="fw-bold">Endereço</h6>
+              <div class="mb-3" style="height: 250px; border-radius: var(--radius-md); overflow: hidden;">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3522.191715409019!2d-48.83218212445541!3d-26.37023427696188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb057e9bfa7c5%3A0x1a1c3c6d76d090ed!2sAv.%20Kurt%20Meinert%2C%20301%20-%20Paranaguamirim%2C%20Joinville%20-%20SC%2C%2089251-270!5e0!3m2!1spt-BR!2sbr!4v1713721020030!5m2!1spt-BR!2sbr" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+
+              <!-- 🛵 Opções de Entrega -->
+              <h6 class="fw-bold">Opções de Entrega</h6>
+              <p class="small mb-3">Delivery • Retirada</p>
+
+              <!-- 💳 Pagamentos -->
+              <h6 class="fw-bold">Pagamento na Entrega</h6>
+              <ul class="small mb-3">
+                <li>💵 Dinheiro</li>
+                <li>💳 Cartão de Crédito: Elo, Mastercard, Visa</li>
+                <li>🏧 Cartão de Débito: Elo, Mastercard, Visa</li>
+                <li>⚡ Pix Manual</li>
+              </ul>
+
+              <!-- 🧾 Dados do Estabelecimento -->
+              <h6 class="fw-bold">Estabelecimento</h6>
+              <ul class="small mb-0">
+                <li>Razão Social: SUNSET BURGUER & BEER LANCHONETE LTDA ME</li>
+                <li>CNPJ: 27.854.185/0001-58</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    
+
+
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/modules/navbar.js"></script>
+    <script src="./js/modules/scroll.js"></script>
+    <script src="./js/modules/whatsapp.js"></script>
+</body>
+</html>

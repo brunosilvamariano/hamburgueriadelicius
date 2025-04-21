@@ -1,0 +1,1 @@
+// Lógica para redirecionamento de pedido via WhatsApp

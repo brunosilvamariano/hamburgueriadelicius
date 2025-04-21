@@ -1,0 +1,70 @@
+/* ===== Reset CSS Completo e Moderno ===== */
+
+/* Box sizing mais previsível */
+*, *::before, *::after {
+  box-sizing: border-box;
+  letter-spacing: 0.4px;
+}
+
+/* Remove margens e paddings padrão */
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove listas com estilo */
+ul[role='list'], ol[role='list'] {
+  list-style: none;
+}
+
+/* Define altura 100% para body e html */
+html, body {
+  height: 100%;
+}
+
+/* Remove decorações de links */
+a {
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove estilos padrão de botão, input, etc. */
+button, input, select, textarea {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+}
+
+/* Remove animações e transições durante a redução de movimento */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Ajustes para imagens e mídias */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove estilo padrão de tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Torna os elementos interativos acessíveis */
+button {
+  cursor: pointer;
+}
+
