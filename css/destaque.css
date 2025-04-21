@@ -1,0 +1,78 @@
+/* ================================
+   🍔 Destaques do Cardápio
+   ================================ */
+
+   .section-destaques {
+    background-color: var(--color-bg-light);
+    font-family: var(--font-body);
+  }
+  
+  .titulo-destaques {
+    font-family: var(--font-title);
+    color: var(--color-primary-burgundy);
+    font-size: var(--fs-xl);
+  }
+  
+  .card-destaque {
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    transition: transform var(--transition-slow), box-shadow var(--transition-slow);
+    background-color: #fff;
+  }
+  
+  .card-destaque:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .card-destaque .card-img-top {
+    border-radius: var(--radius-card) var(--radius-card) 0 0;
+  }
+  
+  .card-destaque .card-title {
+    font-size: var(--fs-md);
+    color: var(--text-primary);
+  }
+  
+  .card-destaque .card-text {
+    color: var(--text-secondary);
+    font-size: var(--fs-sm);
+    margin-bottom: var(--space-md);
+  }
+  
+  .card-destaque p.fw-bold {
+    margin-bottom: var(--space-sm);
+    font-size: var(--fs-base);
+    color: var(--text-primary);
+  }
+  
+  .btn-pedir {
+    background-color: var(--btn-mustard);
+    color: var(--text-invert);
+    border-radius: var(--radius-pill);
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--fs-sm);
+    transition: background-color var(--transition-fast);
+    text-transform: uppercase;
+    font-weight: var(--fw-medium);
+    letter-spacing: 0.5px;
+  }
+  
+  .btn-pedir:hover {
+    background-color: var(--hover-mustard-dark);
+  }
+  
+  .btn-ver-cardapio {
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--radius-pill);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+  }
+  
+  .btn-ver-cardapio:hover {
+    background-color: var(--btn-cream-hover);
+    color: var(--color-primary-black);
+    border-color: var(--btn-cream-hover);
+  }
+  

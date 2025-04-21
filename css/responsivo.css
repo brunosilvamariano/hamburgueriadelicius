@@ -172,3 +172,70 @@
     font-size: 0.95rem;
   }
 }
+
+
+* ================================
+   📱 RESPONSIVIDADE
+   ================================ */
+
+/* 1024px e abaixo */
+@media (max-width: 1024px) {
+  .titulo-destaques {
+    font-size: var(--fs-lg);
+  }
+}
+
+/* 768px e abaixo (tablets) */
+@media (max-width: 768px) {
+  .titulo-destaques {
+    font-size: var(--fs-md);
+  }
+
+  .card-destaque .card-title {
+    font-size: var(--fs-base);
+  }
+
+  .btn-pedir {
+    font-size: var(--fs-xs);
+    padding: var(--space-xs) var(--space-sm);
+  }
+}
+
+/* 425px e abaixo (celulares grandes) */
+@media (max-width: 425px) {
+  .titulo-destaques {
+    font-size: var(--fs-base);
+  }
+
+  .btn-pedir {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn-ver-cardapio {
+    width: 100%;
+  }
+}
+
+/* 375px e abaixo (celulares médios) */
+@media (max-width: 375px) {
+  .card-destaque .card-text {
+    font-size: var(--fs-xs);
+  }
+
+  .card-destaque p.fw-bold {
+    font-size: var(--fs-sm);
+  }
+}
+
+/* 320px e abaixo (celulares pequenos) */
+@media (max-width: 320px) {
+  .titulo-destaques {
+    font-size: 1.125rem;
+  }
+
+  .btn-pedir,
+  .btn-ver-cardapio {
+    font-size: var(--fs-xs);
+  }
+}

@@ -95,7 +95,10 @@
 
   <!-- Main Content -->
   <main class="container" style="width:100%;">
-      <!-- 🎯 Hero Banner -->
+
+      <!-- ================================
+          🍟 Seção de banner
+        ================================ -->
       <section id="hero" class="position-relative text-center d-flex align-items-center justify-content-center">
         <img src="./assets/img/banner/banner.png" alt="Banner Hamburgueria" class="hero-img">
 
@@ -173,20 +176,638 @@
         </div>
       </div>
 
+      <!-- ================================
+          🍟 Seção de Combos
+        ================================ -->
+      <section id="destaques" class="py-5 section-destaques">
+        <div class="container">
+          <h2 class="text-center mb-5 fw-bold titulo-destaques">
+            Destaques do Cardápio
+          </h2>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow-sm border-0 card-destaque">
+                <img src="./assets/img/cards/card1.png" class="card-img-top" alt="Hambúrguer Clássico">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">
+                    Clássico da Casa <span class="badge bg-danger ms-2">🔥 Mais pedido</span>
+                  </h5>
+                  <p class="card-text small">Pão brioche, hambúrguer 180g, queijo cheddar e maionese especial da casa.</p>
+                  <p class="fw-bold text-dark">R$ 28.90</p>
+                  <button class="btn btn-pedir text-white" data-produto="Clássico da Casa" data-preco="28.90">Pedir</button>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow-sm border-0 card-destaque">
+                <img src="./assets/img/cards/card2.png" class="card-img-top" alt="Veggie Delight">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">
+                    Veggie Delight <span class="badge bg-success ms-2">🌱 Veggie</span>
+                  </h5>
+                  <p class="card-text small">Pão integral, hambúrguer de grão de bico, alface americana e molho verde.</p>
+                  <p class="fw-bold text-dark">R$ 26.90</p>
+                  <button class="btn btn-pedir text-white" data-produto="Veggie Delight" data-preco="26.90">Pedir</button>
+                  
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 mx-md-auto">
+              <div class="card h-100 shadow-sm border-0 card-destaque">
+                <img src="./assets/img/cards/card3.png" class="card-img-top" alt="Sunset BBQ">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">
+                    Sunset BBQ <span class="badge bg-warning text-dark ms-2">🥓 Especial</span>
+                  </h5>
+                  <p class="card-text small">Pão australiano, hambúrguer 200g, bacon crocante, cheddar duplo e barbecue artesanal.</p>
+                  <p class="fw-bold text-dark">R$ 32.90</p>
+                  <button class="btn btn-pedir text-white" data-produto="Sunset BBQ" data-preco="32.90">Pedir</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <a href="#cardapio-completo" class="btn btn-outline-dark btn-ver-cardapio">
+              Ver cardápio completo
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================
+          🍔 SEÇÃO: CARDÁPIO DE HAMBÚRGUERES
+     ================================ -->
+      <section id="cardapio-hamburguer" class="py-5 section-cardapio" style="background-color: var(--color-bg-light);">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-5" style="font-family: var(--font-title); color: var(--color-primary-brown);">
+            Cardápio de Hambúrgueres
+          </h2>
       
-    
+          <div class="row g-4" id="hamburgueres-container">
+            <!-- Grupo Inicial (3 cards) -->
+            <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
+              <div class="card h-100 shadow-sm border-0 card-destaque">
+                <img src="./assets/img/cards/card1.png" class="card-img-top" alt="Clássico da Casa">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Clássico da Casa</h5>
+                  <p class="card-text small">Pão brioche, hambúrguer 180g, cheddar e maionese especial.</p>
+                  <p class="fw-bold text-dark">R$ 28,90</p>
+                  <a href="#" target="_blank" class="btn btn-sm text-white btn-pedir" style="background-color: var(--btn-mustard);">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
+              <div class="card h-100 shadow-sm border-0 card-destaque">
+                <img src="./assets/img/cards/card2.png" class="card-img-top" alt="Veggie Delight">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Veggie Delight</h5>
+                  <p class="card-text small">Pão integral, hambúrguer de grão de bico, alface e molho verde.</p>
+                  <p class="fw-bold text-dark">R$ 26,90</p>
+                  <a href="#" target="_blank" class="btn btn-sm text-white btn-pedir" style="background-color: var(--btn-mustard);">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
+              <div class="card h-100 shadow-sm border-0 card-destaque">
+                <img src="./assets/img/cards/card3.png" class="card-img-top" alt="Sunset BBQ">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Sunset BBQ</h5>
+                  <p class="card-text small">Pão australiano, hambúrguer 200g, bacon, cheddar duplo e barbecue.</p>
+                  <p class="fw-bold text-dark">R$ 32,90</p>
+                  <a href="#" target="_blank" class="btn btn-sm text-white btn-pedir" style="background-color: var(--btn-mustard);">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Grupo Oculto Inicialmente -->
+            <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
+              <div class="card h-100 shadow-sm border-0 card-destaque">
+                <img src="./assets/img/cards/card2.png" class="card-img-top" alt="Double Cheddar">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Double Cheddar</h5>
+                  <p class="card-text small">Pão brioche, 2 hambúrgueres, cheddar duplo e cebola crispy.</p>
+                  <p class="fw-bold text-dark">R$ 34,90</p>
+                  <a href="#" target="_blank" class="btn btn-sm text-white btn-pedir" style="background-color: var(--btn-mustard);">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
+              <div class="card h-100 shadow-sm border-0 card-destaque">
+                <img src="./assets/img/cards/card3.png" class="card-img-top" alt="Texano Picante">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Texano Picante</h5>
+                  <p class="card-text small">Pão rústico, hambúrguer 180g, jalapeño, cheddar e molho picante.</p>
+                  <p class="fw-bold text-dark">R$ 30,90</p>
+                  <a href="#" target="_blank" class="btn btn-sm text-white btn-pedir" style="background-color: var(--btn-mustard);">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
+              <div class="card h-100 shadow-sm border-0 card-destaque">
+                <img src="./assets/img/cards/card1.png" class="card-img-top" alt="Barbecue Supreme">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Barbecue Supreme</h5>
+                  <p class="card-text small">Pão australiano, hambúrguer 200g, cheddar, cebola caramelizada e BBQ.</p>
+                  <p class="fw-bold text-dark">R$ 33,90</p>
+                  <a href="#" target="_blank" class="btn btn-sm text-white btn-pedir" style="background-color: var(--btn-mustard);">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Botão "Ver mais" -->
+          <div class="text-center mt-4">
+            <!-- Botão "Ver mais / Ver menos" -->
+  <div class="text-center mt-4">
+    <button class="btn btn-outline-dark btn-ver-toggle" onclick="toggleVerMais('hamburgueres-container', this)">
+      Ver mais
+    </button>
+  </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================
+          🍟 Seção de Porções
+      ================================ -->
+      <section id="porcoes" class="py-5 section-porcoes bg-light">
+        <div class="container">
+          <h2 class="text-center mb-5 fw-bold titulo-secao" style="font-family: var(--font-title); color: var(--color-primary-brown);">
+            Porções
+          </h2>
+
+          <div class="row g-4" id="porcoes-container">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
+              <div class="card h-100 shadow-sm border-0 card-porcao">
+                <img src="assets/img/cards/card2.png" class="card-img-top" alt="Batata Frita">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Batata Frita Média</h5>
+                  <p class="card-text small">Porção média de batata crocante, acompanha molho especial da casa.</p>
+                  <p class="fw-bold text-dark">R$ 12,00</p>
+                  <a href="https://wa.me/5599999999999?text=Olá,%20quero%20uma%20Batata%20Frita%20Média!" target="_blank" class="btn btn-sm text-white btn-pedir">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
+              <div class="card h-100 shadow-sm border-0 card-porcao">
+                <img src="assets/img/cards/card3.png" class="card-img-top" alt="Nuggets de Frango">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Nuggets (8 unid.)</h5>
+                  <p class="card-text small">Croquetes de frango empanados, servidos com ketchup ou barbecue.</p>
+                  <p class="fw-bold text-dark">R$ 14,00</p>
+                  <a href="https://wa.me/5599999999999?text=Olá,%20quero%20Nuggets%20(8%20unid.)!" target="_blank" class="btn btn-sm text-white btn-pedir">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
+              <div class="card h-100 shadow-sm border-0 card-porcao">
+                <img src="assets/img/cards/card3.png" class="card-img-top" alt="Mandioca Frita">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Mandioca Frita</h5>
+                  <p class="card-text small">Mandioca crocante por fora e macia por dentro, ideal para acompanhar qualquer lanche.</p>
+                  <p class="fw-bold text-dark">R$ 13,00</p>
+                  <a href="https://wa.me/5599999999999?text=Olá,%20quero%20uma%20porção%20de%20Mandioca%20Frita!" target="_blank" class="btn btn-sm text-white btn-pedir">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 (Grupo 2 - oculto inicialmente) -->
+            <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
+              <div class="card h-100 shadow-sm border-0 card-porcao">
+                <img src="assets/img/cards/card2.png" class="card-img-top" alt="Anéis de Cebola">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Anéis de Cebola</h5>
+                  <p class="card-text small">Empanados crocantes servidos com molho de pimenta suave.</p>
+                  <p class="fw-bold text-dark">R$ 11,00</p>
+                  <a href="https://wa.me/5599999999999?text=Olá,%20quero%20Anéis%20de%20Cebola!" target="_blank" class="btn btn-sm text-white btn-pedir">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 (Grupo 2) -->
+            <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
+              <div class="card h-100 shadow-sm border-0 card-porcao">
+                <img src="assets/img/cards/card1.png" class="card-img-top" alt="Palitos de Queijo">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Palitos de Queijo</h5>
+                  <p class="card-text small">Recheio derretido com crocância por fora. Vai bem com tudo!</p>
+                  <p class="fw-bold text-dark">R$ 15,00</p>
+                  <a href="https://wa.me/5599999999999?text=Olá,%20quero%20Palitos%20de%20Queijo!" target="_blank" class="btn btn-sm text-white btn-pedir">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 (Grupo 2) -->
+            <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
+              <div class="card h-100 shadow-sm border-0 card-porcao">
+                <img src="assets/img/cards/card1.png" class="card-img-top" alt="Mix de Porções">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Mix da Casa</h5>
+                  <p class="card-text small">Um pouco de tudo: batata, nuggets e mandioca. Ideal para compartilhar.</p>
+                  <p class="fw-bold text-dark">R$ 20,00</p>
+                  <a href="https://wa.me/5599999999999?text=Olá,%20quero%20o%20Mix%20da%20Casa!" target="_blank" class="btn btn-sm text-white btn-pedir">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botão Ver Mais / Ver Menos -->
+          <div class="text-center mt-4">
+            <button class="btn btn-outline-dark btn-ver-toggle" onclick="toggleVerMais('porcoes-container', this)">
+              Ver mais
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================
+          🍨 Seção de Sobremesas
+      ================================ -->
+      <section id="sobremesas" class="py-5 section-sobremesas bg-light">
+        <div class="container">
+          <h2 class="text-center mb-5 fw-bold titulo-secao" style="font-family: var(--font-title); color: var(--color-primary-brown);">
+            Sobremesas
+          </h2>
+
+          <div class="row g-4" id="sobremesas-container">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
+              <div class="card h-100 shadow-sm border-0 card-sobremesa">
+                <img src="assets/img/cards/card3.png" class="card-img-top" alt="Brownie com Sorvete">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Brownie com Sorvete</h5>
+                  <p class="card-text small">Brownie caseiro com casquinha crocante e sorvete de creme.</p>
+                  <p class="fw-bold text-dark">R$ 14,00</p>
+                  <a href="https://wa.me/5599999999999?text=Olá,%20quero%20um%20Brownie%20com%20Sorvete!" target="_blank" class="btn btn-sm text-white btn-pedir">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
+              <div class="card h-100 shadow-sm border-0 card-sobremesa">
+                <img src="assets/img/cards/card1.png" class="card-img-top" alt="Petit Gâteau">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Petit Gâteau</h5>
+                  <p class="card-text small">Bolo com recheio cremoso e sorvete de creme. Um clássico!</p>
+                  <p class="fw-bold text-dark">R$ 16,00</p>
+                  <a href="https://wa.me/5599999999999?text=Olá,%20quero%20um%20Petit%20Gâteau!" target="_blank" class="btn btn-sm text-white btn-pedir">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
+              <div class="card h-100 shadow-sm border-0 card-sobremesa">
+                <img src="assets/img/cards/card1.png" class="card-img-top" alt="Milkshake de Chocolate">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Milkshake de Chocolate</h5>
+                  <p class="card-text small">Milkshake cremoso feito com sorvete premium e calda intensa.</p>
+                  <p class="fw-bold text-dark">R$ 12,00</p>
+                  <a href="https://wa.me/5599999999999?text=Olá,%20quero%20um%20Milkshake%20de%20Chocolate!" target="_blank" class="btn btn-sm text-white btn-pedir">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 (Grupo 2 - oculto inicialmente) -->
+            <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
+              <div class="card h-100 shadow-sm border-0 card-sobremesa">
+                <img src="assets/img/cards/card2.png" class="card-img-top" alt="Pudim de Leite">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Pudim de Leite</h5>
+                  <p class="card-text small">Tradicional e irresistível, com calda de caramelo feita na hora.</p>
+                  <p class="fw-bold text-dark">R$ 10,00</p>
+                  <a href="https://wa.me/5599999999999?text=Olá,%20quero%20um%20Pudim%20de%20Leite!" target="_blank" class="btn btn-sm text-white btn-pedir">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 (Grupo 2) -->
+            <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
+              <div class="card h-100 shadow-sm border-0 card-sobremesa">
+                <img src="assets/img/cards/card3.png" class="card-img-top" alt="Bolo de Cenoura">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Bolo de Cenoura com Calda</h5>
+                  <p class="card-text small">Receita da vovó com cobertura quente de chocolate meio amargo.</p>
+                  <p class="fw-bold text-dark">R$ 11,00</p>
+                  <a href="https://wa.me/5599999999999?text=Olá,%20quero%20um%20Bolo%20de%20Cenoura!" target="_blank" class="btn btn-sm text-white btn-pedir">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 (Grupo 2) -->
+            <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
+              <div class="card h-100 shadow-sm border-0 card-sobremesa">
+                <img src="assets/img/cards/card2.png" class="card-img-top" alt="Paleta Mexicana">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Paleta Mexicana</h5>
+                  <p class="card-text small">Sorvete recheado de frutas com pedaços naturais. Leve e refrescante!</p>
+                  <p class="fw-bold text-dark">R$ 9,00</p>
+                  <a href="https://wa.me/5599999999999?text=Olá,%20quero%20uma%20Paleta%20Mexicana!" target="_blank" class="btn btn-sm text-white btn-pedir">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botão Ver Mais / Ver Menos -->
+          <div class="text-center mt-4">
+            <button class="btn btn-outline-dark btn-ver-toggle" onclick="toggleVerMais('sobremesas-container', this)">
+              Ver mais
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================
+          🥤 Seção de Bebidas
+      ================================ -->
+      <section id="bebidas" class="py-5 section-bebidas bg-light">
+        <div class="container">
+          <h2 class="text-center mb-5 fw-bold titulo-secao" style="font-family: var(--font-title); color: var(--color-primary-brown);">
+            Bebidas
+          </h2>
+
+          <div class="row g-4" id="bebidas-container">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
+              <div class="card h-100 shadow-sm border-0 card-bebida">
+                <img src="assets/img/cards/card1.png" class="card-img-top" alt="Coca-Cola Lata">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Coca-Cola Lata (350ml)</h5>
+                  <p class="card-text small">Bebida geladinha para acompanhar seu lanche.</p>
+                  <p class="fw-bold text-dark">R$ 6,00</p>
+                  <a href="https://wa.me/5599999999999?text=Quero%20uma%20Coca-Cola%20Lata!" target="_blank" class="btn btn-sm text-white btn-pedir">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
+              <div class="card h-100 shadow-sm border-0 card-bebida">
+                <img src="assets/img/cards/card3.png" class="card-img-top" alt="Guaraná Antarctica Lata">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Guaraná Lata (350ml)</h5>
+                  <p class="card-text small">Sabor brasileiro tradicional e refrescante.</p>
+                  <p class="fw-bold text-dark">R$ 5,00</p>
+                  <a href="https://wa.me/5599999999999?text=Quero%20um%20Guaraná%20Antarctica!" target="_blank" class="btn btn-sm text-white btn-pedir">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
+              <div class="card h-100 shadow-sm border-0 card-bebida">
+                <img src="assets/img/cards/card2.png" class="card-img-top" alt="Fanta Laranja">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Fanta Laranja (350ml)</h5>
+                  <p class="card-text small">Refresco leve e frutado, perfeito para dias quentes.</p>
+                  <p class="fw-bold text-dark">R$ 5,00</p>
+                  <a href="https://wa.me/5599999999999?text=Quero%20uma%20Fanta%20Laranja!" target="_blank" class="btn btn-sm text-white btn-pedir">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 (Grupo 2 - oculto inicialmente) -->
+            <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
+              <div class="card h-100 shadow-sm border-0 card-bebida">
+                <img src="assets/img/cards/card1.png" class="card-img-top" alt="Suco de Limão">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Suco Natural de Limão</h5>
+                  <p class="card-text small">Refrescante, azedinho na medida e sem conservantes.</p>
+                  <p class="fw-bold text-dark">R$ 7,00</p>
+                  <a href="https://wa.me/5599999999999?text=Quero%20um%20Suco%20de%20Limão!" target="_blank" class="btn btn-sm text-white btn-pedir">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 (Grupo 2) -->
+            <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
+              <div class="card h-100 shadow-sm border-0 card-bebida">
+                <img src="assets/img/cards/card3.png" class="card-img-top" alt="Suco de Laranja">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Suco Natural de Laranja</h5>
+                  <p class="card-text small">Feito na hora, 100% fruta. Sem adição de açúcar.</p>
+                  <p class="fw-bold text-dark">R$ 7,00</p>
+                  <a href="https://wa.me/5599999999999?text=Quero%20um%20Suco%20de%20Laranja!" target="_blank" class="btn btn-sm text-white btn-pedir">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 (Grupo 2) -->
+            <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
+              <div class="card h-100 shadow-sm border-0 card-bebida">
+                <img src="assets/img/cards/card2.png" class="card-img-top" alt="Água Mineral">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Água Mineral</h5>
+                  <p class="card-text small">Sem gás, pura e essencial.</p>
+                  <p class="fw-bold text-dark">R$ 3,00</p>
+                  <a href="https://wa.me/5599999999999?text=Quero%20uma%20Água%20Mineral!" target="_blank" class="btn btn-sm text-white btn-pedir">
+                    Pedir agora
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botão Ver Mais / Ver Menos -->
+          <div class="text-center mt-4">
+            <button class="btn btn-outline-dark btn-ver-toggle" onclick="toggleVerMais('bebidas-container', this)">
+              Ver mais
+            </button>
+          </div>
+        </div>
+      </section>
 
 
 
   </main>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- Script separado -->
+    <script src="./assets/js/pedidos.js"></script>
+
+      <!-- Scripts -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+      <!-- QRCodeJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
 
     <script src="./js/main.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/modules/vermais.js"></script>
     <script src="./js/modules/navbar.js"></script>
     <script src="./js/modules/scroll.js"></script>
     <script src="./js/modules/whatsapp.js"></script>
+
+   
+    <!-- Modal Pedido com QR Code Pix -->
+    <div class="modal fade" id="pedidoModal" tabindex="-1" aria-labelledby="pedidoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <form id="formPedido">
+            <div class="modal-header">
+              <h5 class="modal-title" id="pedidoModalLabel">Finalizar Pedido</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body row g-3">
+
+              <input type="hidden" id="produtoSelecionado">
+              <input type="hidden" id="precoSelecionado">
+
+              <div class="col-md-6">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="endereco" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="endereco" required>
+              </div>
+
+              <div class="col-md-4">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="cep" required>
+              </div>
+
+              <div class="col-md-4">
+                <label for="pagamento" class="form-label">Forma de Pagamento</label>
+                <select class="form-select" id="pagamento" required>
+                  <option value="">Escolha...</option>
+                  <option>Pix</option>
+                  <option>Crédito</option>
+                  <option>Débito</option>
+                  <option>Dinheiro</option>
+                </select>
+              </div>
+
+              <div class="col-md-4 d-none" id="campoTroco">
+                <label for="troco" class="form-label">Troco para quanto?</label>
+                <input type="text" class="form-control" id="troco" placeholder="Ex: 50,00">
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Adicionais</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input adicionais" type="checkbox" id="refri" value="Refrigerante">
+                  <label class="form-check-label" for="refri">Refrigerante</label>
+                </div>
+                <select class="form-select mt-2" id="refrigeranteSelecionado">
+                  <option value="">Escolha um refrigerante</option>
+                  <option>Coca-Cola - R$ 6,00</option>
+                  <option>Fanta - R$ 6,00</option>
+                  <option>Guaraná - R$ 6,00</option>
+                </select>
+
+                <div class="form-check form-check-inline mt-2">
+                  <input class="form-check-input adicionais" type="checkbox" id="suco" value="Suco">
+                  <label class="form-check-label" for="suco">Suco</label>
+                </div>
+                <select class="form-select mt-2" id="sucoSelecionado">
+                  <option value="">Escolha um suco</option>
+                  <option>Suco de Laranja - R$ 5,00</option>
+                  <option>Suco de Limão - R$ 5,00</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <div class="form-check mt-3">
+                  <input class="form-check-input" type="checkbox" id="temSobremesa">
+                  <label class="form-check-label" for="temSobremesa">Adicionar sobremesa?</label>
+                </div>
+
+                <div class="mt-2 d-none" id="campoSobremesa">
+                  <select class="form-select" id="sobremesaSelecionada">
+                    <option value="">Escolha uma sobremesa</option>
+                    <option>Brownie - R$ 7,00</option>
+                    <option>Pudim - R$ 6,00</option>
+                    <option>Mousse de Maracujá - R$ 6,50</option>
+                    <option>Sorvete - R$ 5,00</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- QR Code PIX -->
+              <div id="pixContainer" class="d-none mt-3 border-top pt-3">
+                <h6>Pagamento via Pix</h6>
+                <p>Escaneie o QR Code ou copie o código abaixo e envie o comprovante no WhatsApp:</p>
+                <div id="pixQRCode" class="mb-2"></div>
+                <input type="text" id="codigoPix" class="form-control mb-2" readonly>
+                <button type="button" class="btn btn-outline-secondary w-100" id="copiarPix">Copiar Código Pix</button>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success w-100">Enviar Pedido via WhatsApp</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
 </body>
 </html>
