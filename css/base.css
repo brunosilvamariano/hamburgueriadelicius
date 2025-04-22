@@ -27,3 +27,57 @@ body {
 .nav-link{
     letter-spacing: 1px !important;
 }
+
+/* ===== Seção Sobre a Hamburgueria - Estilização Customizada ===== */
+
+#sobreBottom {
+  height: 80vh;
+  background-color: var(--color-bg-light);
+  border-top-left-radius: var(--radius-md);
+  border-top-right-radius: var(--radius-md);
+}
+
+.btn-sobre {
+  background-color: var(--btn-brown);
+  border-radius: var(--radius-pill);
+  color: var(--text-invert);
+  font-family: var(--font-accent);
+  font-size: var(--fs-md);
+  padding: 0.6rem 1.5rem;
+  transition: background-color var(--transition-fast);
+}
+
+.btn-sobre:hover {
+  background-color: var(--btn-brown-dark);
+}
+
+#sobreBottom .offcanvas-title {
+  font-family: var(--font-title);
+  font-size: var(--fs-xl);
+  color: var(--color-primary-brown);
+}
+
+.img-sobre {
+  border-radius: var(--radius-card);
+  object-fit: cover;
+  height: 100%;
+  max-height: 350px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.texto-sobre {
+  font-family: var(--font-body);
+  font-size: var(--fs-md);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.destaque-sobre {
+  font-family: var(--font-accent);
+  font-size: var(--fs-lg);
+  color: var(--color-primary-burgundy);
+  margin-top: 2rem;
+  font-weight: bold;
+}

@@ -1,1 +1,86 @@
-/* Estilos específicos do rodapé */
+/* Estilos específicos do rodapé *//* ===== FOOTER ESTILIZADO - IDENTIDADE VISUAL ===== */
+
+.footer {
+    background-color: var(--color-primary-brown);
+    color: var(--text-invert);
+  }
+  
+  .logo-footer {
+    font-family: var(--font-accent);
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+    color: var(--color-primary-mustard);
+  }
+  
+  .titulo-footer {
+    font-family: var(--font-title);
+    font-size: var(--fs-lg);
+    margin-bottom: var(--space-sm);
+    color: var(--text-invert);
+  }
+  
+  .text-footer {
+    font-family: var(--font-body);
+    font-size: var(--fs-sm);
+    color: var(--text-invert);
+    line-height: 1.6;
+  }
+  
+  .link-footer {
+    display: inline-block;
+    font-size: var(--fs-sm);
+    color: var(--text-invert);
+    margin-bottom: var(--space-xs);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+  }
+  
+  .link-footer:hover {
+    color: var(--color-primary-mustard);
+  }
+  
+  /* === Redes sociais === */
+  .social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--btn-social-bg);
+    border: 1px solid var(--btn-social-border);
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-pill);
+    margin-right: var(--space-sm);
+    font-size: 1.2rem;
+    color: white;
+    transition: all var(--transition-fast);
+  }
+  
+  .social-icons a:hover {
+    background-color: var(--btn-social-hover-bg);
+    backdrop-filter: blur(var(--btn-social-hover-blur));
+  }
+  
+  /* Específicos por rede */
+  .icon-social.instagram:hover {
+    color: var(--color-instagram);
+  }
+  
+  .icon-social.whatsapp:hover {
+    color: var(--color-whatsapp);
+  }
+  
+  .icon-social.facebook:hover {
+    color: var(--color-facebook);
+  }
+  
+  /* Responsivo */
+  @media (max-width: 576px) {
+    .footer {
+      text-align: center;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  }
+  

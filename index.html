@@ -681,9 +681,128 @@
         </div>
       </section>
 
+      <!-- Botão que abre o offcanvas -->
+<div class="text-center py-5">
+  <button 
+    class="btn btn-sobre" 
+    type="button" 
+    data-bs-toggle="offcanvas" 
+    data-bs-target="#sobreBottom" 
+    aria-controls="sobreBottom">
+    Sobre a Hamburgueria
+  </button>
+</div>
+
+<!-- Offcanvas Bottom -->
+<div 
+  class="offcanvas offcanvas-bottom" 
+  tabindex="-1" 
+  id="sobreBottom" 
+  aria-labelledby="sobreBottomLabel">
+  
+  <div class="offcanvas-header px-4 pt-4">
+    <h5 class="offcanvas-title" id="sobreBottomLabel">
+      Nossa História
+    </h5>
+    <button 
+      type="button" 
+      class="btn-close" 
+      data-bs-dismiss="offcanvas" 
+      aria-label="Fechar"></button>
+  </div>
+
+  <div class="offcanvas-body px-4">
+    <div class="row align-items-center gy-4">
+      
+      <!-- Imagem -->
+      <div class="col-md-5">
+        <img 
+          src="assets/img/banner/banner.png" 
+          alt="Equipe da Hamburgueria" 
+          class="img-fluid img-sobre">
+      </div>
+
+      <!-- Texto -->
+      <div class="col-md-7">
+        <p class="texto-sobre">
+          Fundada com amor e dedicação em 2018, nossa hamburgueria nasceu de um sonho antigo: unir ingredientes frescos, sabor de verdade e um ambiente acolhedor. Começamos em um pequeno food truck e hoje temos orgulho de servir centenas de pessoas toda semana.
+        </p>
+        <p class="texto-sobre">
+          Cada hambúrguer carrega nossa identidade: pão artesanal, blends exclusivos e acompanhamentos que fazem toda diferença. Tudo feito com carinho — do preparo ao atendimento.
+        </p>
+        <p class="destaque-sobre">
+          🍔 Sinta-se em casa. Esse sabor tem história!
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
 
 
   </main>
+
+  <footer class="footer text-white pt-5 pb-4 mt-5">
+    <div class="container">
+      <div class="row gy-4 justify-content-between">
+  
+        <!-- Logo + Descrição -->
+        <div class="col-md-4">
+          <h4 class="logo-footer">🍔 Burguer do Chef</h4>
+          <p class="text-footer">
+            Sabor autêntico e ingredientes de verdade. Desde 2018 criando experiências deliciosas.
+          </p>
+        </div>
+  
+        <!-- Links Rápidos -->
+        <div class="col-md-3">
+          <h5 class="titulo-footer">Navegue</h5>
+          <ul class="list-unstyled">
+            <li><a href="#inicio" class="link-footer">Início</a></li>
+            <li><a href="#cardapio" class="link-footer">Cardápio</a></li>
+            <li><a href="#porcoes" class="link-footer">Porções</a></li>
+            <li><a href="#bebidas" class="link-footer">Bebidas</a></li>
+            <li><a href="#contato" class="link-footer">Contato</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contato + Horário -->
+        <div class="col-md-4">
+          <h5 class="titulo-footer">Contato</h5>
+          <p class="text-footer">
+            📍 Rua dos Sabores, 123 - Centro <br>
+            🕒 Ter a Dom: 18h às 23h <br>
+            📱 WhatsApp: (11) 91234-5678
+          </p>
+  
+          <!-- Redes sociais -->
+          <div class="social-icons mt-3">
+            <a href="#" class="icon-social instagram" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="icon-social whatsapp" aria-label="WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="#" class="icon-social facebook" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+        </div>
+  
+      </div>
+  
+      <!-- Linha divisória -->
+      <hr class="border-top mt-4 mb-3">
+  
+      <!-- Créditos -->
+      <div class="text-center small text-footer">
+        © 2025 Burguer do Chef — Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+  
 
 
     <!-- EmailJS SDK -->
