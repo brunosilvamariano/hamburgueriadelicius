@@ -1,13 +1,15 @@
-/* ================================
-   🌈 PALETA DE CORES - HAMBURGUERIA
+/* ==========================================
+   🍔 PALETA DE CORES E ESTILOS - HAMBURGUERIA
+   ------------------------------------------
    Inspirada em tons rústicos, modernos e aconchegantes
-   ================================ */
+   Preparada para escalabilidade, manutenção e integração com design system
+   ========================================== */
 
    :root {
       /* === CORES PRIMÁRIAS (Identidade Visual) === */
       --color-primary-black: #1f1f20;
       --color-primary-brown: #4a4031;
-      --color-primary-burgundy: #606d80;
+      --color-primary-burgundy: #606d80; /* azul acinzentado substituindo o bordô tradicional */
       --color-primary-mustard: #FFB300;
       --color-primary-olive: #556B2F;
     
@@ -30,35 +32,32 @@
       --hover-mustard-dark: #e6a800;
       --hover-burgundy-light: #9c2b3b;
     
+      /* === GRADIENTES E EFEITOS === */
+      --gradient-hero: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+    
       /* ================================
          🎯 VARIÁVEIS DE ESTILO - BOTÕES
          ================================ */
-    
-      /* === BASE MOSTARDA === */
       --btn-mustard: hsl(42, 100%, 50%);
       --btn-mustard-soft: hsl(42, 100%, 45%);
       --btn-mustard-translucent: rgba(255, 179, 0, 0.2);
     
-      /* === BASE MARROM === */
       --btn-brown: hsl(18, 28%, 25%);
       --btn-brown-dark: hsl(18, 28%, 18%);
       --btn-brown-soft: rgba(78, 52, 46, 0.8);
     
-      /* === BASE CREME === */
       --btn-cream: hsl(39, 100%, 93%);
       --btn-cream-hover: hsl(39, 100%, 88%);
     
-      /* === BASE BORDÔ === */
       --btn-burgundy: hsl(345, 100%, 25%);
       --btn-burgundy-light: hsl(345, 85%, 35%);
       --btn-burgundy-transparent: rgba(128, 0, 32, 0.2);
     
-      /* === CORES REDES SOCIAIS === */
+      /* === BOTÕES SOCIAIS === */
       --color-instagram: #E1306C;
       --color-facebook: #1877F2;
       --color-whatsapp: #25D366;
     
-      /* === ESTILO BOTÕES SOCIAIS === */
       --btn-social-bg: #181818;
       --btn-social-border: rgba(156, 156, 156, 0.466);
       --btn-social-hover-bg: rgba(156, 156, 156, 0.466);
@@ -68,7 +67,7 @@
          ✍️ TIPOGRAFIA
          ================================ */
       --font-title: 'Playfair Display', serif;
-      --font-body: 'Inter', sans-serif;
+      --font-body: 'Inter', 'Segoe UI', sans-serif;
       --font-accent: 'Bebas Neue', cursive;
     
       --fw-regular: 400;
@@ -97,6 +96,9 @@
       --radius-pill: 999px;
       --radius-card: 16px;
     
+      --border-default: 1px solid var(--color-primary-black);
+      --border-light: 1px solid rgba(255, 255, 255, 0.1);
+    
       /* ================================
          🌫️ SOMBRAS
          ================================ */
@@ -117,6 +119,7 @@
       --max-width-md: 720px;
       --max-width-lg: 960px;
       --max-width-xl: 1140px;
+      --max-width: 1024px;
     
       /* ================================
          ⏱️ ANIMAÇÕES E TRANSIÇÕES
@@ -141,9 +144,22 @@
       --z-backdrop: 900;
     
       /* ================================
-         🟰 LAYOUT
+         🟰 LAYOUT AUXILIAR
          ================================ */
-      --max-width: 1024px;
       --border-radius: 0.5rem;
+    
+      /* ================================
+         🔠 ÍCONES E TAMANHOS EXTRAS
+         ================================ */
+      --icon-size-sm: 16px;
+      --icon-size-md: 24px;
+      --icon-size-lg: 32px;
+    
+      /* ================================
+         📦 INPUTS E FORMULÁRIOS
+         ================================ */
+      --input-border: 1px solid var(--color-primary-black);
+      --input-focus: 1px solid var(--color-primary-mustard);
     }
     
+    /* FIM DAS VARIÁVEIS *
