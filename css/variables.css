@@ -4,122 +4,146 @@
    ================================ */
 
    :root {
-    /* === CORES PRIMÁRIAS (Identidade Visual) === */
-    --color-primary-black: #1f1f20; 
-     
-    --color-primary-brown: #4a4031;       /* Marrom escuro - fundo navbar, rodapé */
-    --color-primary-burgundy: #606d80;    /* Bordô - títulos, acentos elegantes */
-    --color-primary-mustard: #FFB300;     /* Mostarda vibrante - botões de ação */
-    --color-primary-olive: #556B2F;       /* Verde oliva - elementos naturais */
-  
-    /* === CORES SECUNDÁRIAS (Fundos, detalhes) === */
-    --color-bg-cream: #dce0e6;            /* Creme suave - fundo principal */
-    --color-bg-dark: #1C1C1C;             /* Fundo escuro - menus offcanvas */
-    --color-bg-light: #FAF9F6;            /* Branco levemente quente - seções claras */
-  
-    /* === CORES DE TEXTO === */
-    --text-primary: #1d1d1d;              /* Texto principal - alto contraste */
-    --text-secondary: #444444;            /* Subtítulos, menus */
-    --text-invert: #ffffff;               /* Texto em fundo escuro */
-  
-    /* === CORES DE ESTADO === */
-    --color-success: #4CAF50;             /* Verde - sucesso (ex: pedido enviado) */
-    --color-error: #F44336;               /* Vermelho - erro/validação */
-    --color-warning: #FF9800;             /* Alerta/atenção */
-  
-    /* === CORES DE HOVER/INTERAÇÃO === */
-    --hover-mustard-dark: #e6a800;        /* Hover no botão mostarda */
-    --hover-burgundy-light: #9c2b3b;   
+      /* === CORES PRIMÁRIAS (Identidade Visual) === */
+      --color-primary-black: #1f1f20;
+      --color-primary-brown: #4a4031;
+      --color-primary-burgundy: #606d80;
+      --color-primary-mustard: #FFB300;
+      --color-primary-olive: #556B2F;
     
-    /* ================================
-   🎯 VARIÁVEIS DE ESTILO - BOTÕES
-   ================================ */
+      /* === CORES SECUNDÁRIAS (Fundos, detalhes) === */
+      --color-bg-cream: #dce0e6;
+      --color-bg-dark: #1C1C1C;
+      --color-bg-light: #FAF9F6;
+    
+      /* === CORES DE TEXTO === */
+      --text-primary: #1d1d1d;
+      --text-secondary: #444444;
+      --text-invert: #ffffff;
+    
+      /* === CORES DE ESTADO === */
+      --color-success: #4CAF50;
+      --color-error: #F44336;
+      --color-warning: #FF9800;
+    
+      /* === CORES DE HOVER/INTERAÇÃO === */
+      --hover-mustard-dark: #e6a800;
+      --hover-burgundy-light: #9c2b3b;
+    
+      /* ================================
+         🎯 VARIÁVEIS DE ESTILO - BOTÕES
+         ================================ */
+    
       /* === BASE MOSTARDA === */
-      --btn-mustard: hsl(42, 100%, 50%);                /* Mostarda pura */
-      --btn-mustard-soft: hsl(42, 100%, 45%);            /* Levemente escurecida */
-      --btn-mustard-translucent: rgba(255, 179, 0, 0.2); /* Fundo sutil mostarda */
-
+      --btn-mustard: hsl(42, 100%, 50%);
+      --btn-mustard-soft: hsl(42, 100%, 45%);
+      --btn-mustard-translucent: rgba(255, 179, 0, 0.2);
+    
       /* === BASE MARROM === */
-      --btn-brown: hsl(18, 28%, 25%);                   /* Marrom rústico */
-      --btn-brown-dark: hsl(18, 28%, 18%);              /* Marrom ainda mais escuro */
-      --btn-brown-soft: rgba(78, 52, 46, 0.8);          /* Marrom semi-transparente */
-
+      --btn-brown: hsl(18, 28%, 25%);
+      --btn-brown-dark: hsl(18, 28%, 18%);
+      --btn-brown-soft: rgba(78, 52, 46, 0.8);
+    
       /* === BASE CREME === */
-      --btn-cream: hsl(39, 100%, 93%);                   /* Creme claro */
-      --btn-cream-hover: hsl(39, 100%, 88%);             /* Hover mais escuro */
-
+      --btn-cream: hsl(39, 100%, 93%);
+      --btn-cream-hover: hsl(39, 100%, 88%);
+    
       /* === BASE BORDÔ === */
-      --btn-burgundy: hsl(345, 100%, 25%);              /* Bordô original */
-      --btn-burgundy-light: hsl(345, 85%, 35%);         /* Bordô suavizado */
-      --btn-burgundy-transparent: rgba(128, 0, 32, 0.2);/* Fundo leve bordô */
-         
-        /* Cores das redes sociais */
-         --color-instagram: #E1306C;
-         --color-facebook: #1877F2;
-         --color-whatsapp: #25D366;
-
-         /* Cores de fundo e borda padrão dos botões sociais */
-         --btn-social-bg: #181818;
-         --btn-social-border: rgba(156, 156, 156, 0.466);
-         --btn-social-hover-bg: rgba(156, 156, 156, 0.466);
-         --btn-social-hover-blur: 4px;
-      
-    /* ================================
-       ✍️ TIPOGRAFIA
-       ================================ */
-  
-    /* === FAMÍLIAS DE FONTES === */
-    --font-title: 'Playfair Display', serif;      /* Títulos estilizados */
-    --font-body: 'Inter', sans-serif;             /* Texto geral e parágrafos */
-    --font-accent: 'Bebas Neue', cursive;         /* Detalhes ou frases de destaque */
-  
-    /* === PESOS PADRÕES === */
-    --fw-regular: 400;
-    --fw-medium: 500;
-    --fw-bold: 700;
-  
-    /* === TAMANHOS DE FONTES === */
-    --fs-xs: 0.75rem;
-    --fs-sm: 0.875rem;
-    --fs-base: 1rem;
-    --fs-md: 1.125rem;
-    --fs-lg: 1.5rem;
-    --fs-xl: 2rem;
-    --fs-xxl: 3rem;
-  
-    /* ================================
-       📏 ESPAÇAMENTO E BORDAS
-       ================================ */
-  
-    --space-xs: 4px;
-    --space-sm: 8px;
-    --space-md: 16px;
-    --space-lg: 24px;
-    --space-xl: 32px;
-  
-    --radius-sm: 6px;
-    --radius-md: 12px;
-    --radius-pill: 999px;      /* Para botões arredondados */
-    --radius-card: 16px;
-  
-    /* ================================
-       🔧 Z-INDEX PADRÃO
-       ================================ */
-    --z-navbar: 1000;
-    --z-modal: 1050;
-    --z-dropdown: 1020;
-    --z-backdrop: 900;
-
-
-
-    /* ================================
-        🟰 LAYOUT
-       ================================ */
-  --max-width: 1024px;
-  --border-radius: 0.5rem;       /* 8px */
-  --transition-fast: 0.2s ease-in-out;
-  --transition-slow: 0.4s ease;
-  }
-  
-
-
+      --btn-burgundy: hsl(345, 100%, 25%);
+      --btn-burgundy-light: hsl(345, 85%, 35%);
+      --btn-burgundy-transparent: rgba(128, 0, 32, 0.2);
+    
+      /* === CORES REDES SOCIAIS === */
+      --color-instagram: #E1306C;
+      --color-facebook: #1877F2;
+      --color-whatsapp: #25D366;
+    
+      /* === ESTILO BOTÕES SOCIAIS === */
+      --btn-social-bg: #181818;
+      --btn-social-border: rgba(156, 156, 156, 0.466);
+      --btn-social-hover-bg: rgba(156, 156, 156, 0.466);
+      --btn-social-hover-blur: 4px;
+    
+      /* ================================
+         ✍️ TIPOGRAFIA
+         ================================ */
+      --font-title: 'Playfair Display', serif;
+      --font-body: 'Inter', sans-serif;
+      --font-accent: 'Bebas Neue', cursive;
+    
+      --fw-regular: 400;
+      --fw-medium: 500;
+      --fw-bold: 700;
+    
+      --fs-xs: 0.75rem;
+      --fs-sm: 0.875rem;
+      --fs-base: 1rem;
+      --fs-md: 1.125rem;
+      --fs-lg: 1.5rem;
+      --fs-xl: 2rem;
+      --fs-xxl: 3rem;
+    
+      /* ================================
+         📏 ESPAÇAMENTO E BORDAS
+         ================================ */
+      --space-xs: 4px;
+      --space-sm: 8px;
+      --space-md: 16px;
+      --space-lg: 24px;
+      --space-xl: 32px;
+    
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-pill: 999px;
+      --radius-card: 16px;
+    
+      /* ================================
+         🌫️ SOMBRAS
+         ================================ */
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+      --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+      --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+    
+      /* ================================
+         💡 OPACIDADE
+         ================================ */
+      --opacity-disabled: 0.5;
+      --opacity-hover: 0.85;
+    
+      /* ================================
+         📐 CONTAINERS RESPONSIVOS
+         ================================ */
+      --max-width-sm: 540px;
+      --max-width-md: 720px;
+      --max-width-lg: 960px;
+      --max-width-xl: 1140px;
+    
+      /* ================================
+         ⏱️ ANIMAÇÕES E TRANSIÇÕES
+         ================================ */
+      --transition-fast: 0.2s ease-in-out;
+      --transition-slow: 0.4s ease;
+      --delay-fast: 0.1s;
+      --delay-slow: 0.3s;
+    
+      /* ================================
+         🧱 ALTURAS FIXAS
+         ================================ */
+      --height-navbar: 64px;
+      --height-footer: 80px;
+    
+      /* ================================
+         🔧 Z-INDEX PADRÃO
+         ================================ */
+      --z-navbar: 1000;
+      --z-modal: 1050;
+      --z-dropdown: 1020;
+      --z-backdrop: 900;
+    
+      /* ================================
+         🟰 LAYOUT
+         ================================ */
+      --max-width: 1024px;
+      --border-radius: 0.5rem;
+    }
+    

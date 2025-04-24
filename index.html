@@ -56,77 +56,136 @@
           🧾 ARQUIVOS CSS
           ============================== -->
       <link rel="stylesheet" href="./css/style.css">
+
+      <style>
+        /* Corrige o scroll para não cobrir o conteúdo com header fixo */
+        [id] {
+          scroll-margin-top: 100px; /* Ajuste conforme a altura do header */
+        }
+      </style>
     
     </head>
-  <body>
+  <body data-bs-theme="dark">
+        <!-- =============================
+       🌐 HEADER FIXO COM CARRINHO
+  ============================= -->
+  <header class="fixed-top">
+    <nav class="navbar navbar-dark bg-dark py-2 px-3">
+      <div class="container px-0" style="max-width: 1024px;">
+        
+        <!-- LOGO -->
+        <a class="navbar-brand d-flex align-items-center" href="/">
+          <img src="./assets/img/logo/logo.svg" alt="Logo Hamburgueria Rústica" class="me-2" width="140" height="50">
+        </a>
 
-   <!-- =======================================
-     🌐 HEADER FIXO COM OFFCANVAS RESPONSIVO
-     ======================================= -->
-      <header class="fixed-top">
-        <nav class="navbar navbar-dark bg-dark">
-          <div class="container-fluid" style="max-width: 1024px;">
-            <!-- 🔰 Logo da marca (acessível e responsiva) -->
-            <a class="navbar-brand d-flex align-items-center" href="#hero" aria-label="Ir para o início da página">
-              <img src="./assets/img/logo/logo.svg" alt="Logo da Hamburgueria Rústica" width="140" height="50" class="me-2">
+        <!-- BOTÕES: CARRINHO + MENU RESPONSIVO + USUÁRIO -->
+        <div class="d-flex align-items-center gap-3">
+          <div id="user-info" class="text-white small d-none d-md-block" data-user-info></div>
+
+          <!-- CARRINHO -->
+          <button id="btn-carrinho" type="button" class="btn btn-outline-warning position-relative"
+            data-bs-toggle="modal" data-bs-target="#carrinhoModal" aria-label="Abrir carrinho">
+            <i class="bi bi-cart3 fs-5"></i>
+            <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+          </button>
+
+          <!-- BOTÃO MENU RESPONSIVO -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Abrir menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <!-- OFFCANVAS MENU -->
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+              <img src="./assets/img/logo/logo.svg" alt="Logo Hamburgueria Rústica" class="me-2" width="140" height="50">
             </a>
-            <!-- ☰ Botão do menu responsivo (Offcanvas) -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Abrir menu de navegação">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- 📱 Menu Offcanvas -->
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <a class="navbar-brand d-flex align-items-center" href="#hero" aria-label="Ir para o início da página">
-                  <img src="./assets/img/logo/logo.svg" alt="Logo da Hamburgueria Rústica" width="140" height="50" class="me-2">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 fs-5 gap-2">
+              <!-- DROPDOWN -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-warning" href="#" role="button" data-bs-toggle="dropdown">
+                  🍽️ Cardápio
                 </a>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Fechar menu"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-5">
-                  <!-- 🍽️ Dropdown do Cardápio -->
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      🍽️ Cardápio
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="menuDropdown">
-                      <li><a class="dropdown-item" href="#destaques">🍱 Combos</a></li>
-                      <li><a class="dropdown-item" href="#cardapio-hamburguer">🍔 Lanches</a></li>
-                      <li><a class="dropdown-item" href="#porcoes">🍟 Porções</a></li>
-                      <li><a class="dropdown-item" href="#bebidas">🥤 Bebidas</a></li>
-                      <li><a class="dropdown-item" href="#sobremesas">🍰 Sobremesas</a></li>
-                    </ul>
-                  </li>
-                  <!-- 🔗 Links principais -->
-                  <li class="nav-item">
-                    <a class="nav-link" href="#sobre">🧑‍🍳 Sobre</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contato">📞 Contato</a>
-                  </li>
-                  <!-- 🌐 Redes sociais estilizadas -->
-                  <li class="nav-item mt-4">
-                    <div class="d-flex gap-3 justify-content-center">
-                      <a href="https://www.instagram.com/sua_hamburgueria" target="_blank" class="Btn btn-instagram" aria-label="Instagram">
-                        <span class="svgContainer"><i class="bi bi-instagram fs-4"></i></span>
-                        <span class="BG"></span>
-                      </a>
-                      <a href="https://www.facebook.com/sua_hamburgueria" target="_blank" class="Btn btn-facebook" aria-label="Facebook">
-                        <span class="svgContainer"><i class="bi bi-facebook fs-4"></i></span>
-                        <span class="BG"></span>
-                      </a>
-                      <a href="https://wa.me/47991597258" target="_blank" class="Btn btn-whatsapp" aria-label="WhatsApp">
-                        <span class="svgContainer"><i class="bi bi-whatsapp fs-4"></i></span>
-                        <span class="BG"></span>
-                      </a>
-                    </div>
-                  </li>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#destaques">🍱 Combos</a></li>
+                  <li><a class="dropdown-item" href="#cardapio-hamburguer">🍔 Lanches</a></li>
+                  <li><a class="dropdown-item" href="#porcoes">🍟 Porções</a></li>
+                  <li><a class="dropdown-item" href="#bebidas">🥤 Bebidas</a></li>
+                  <li><a class="dropdown-item" href="#sobremesas">🍰 Sobremesas</a></li>
                 </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link text-white" href="#sobre">🧑‍🍳 Sobre</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#contato">📞 Contato</a></li>
+
+              <!-- REDES SOCIAIS -->
+              <li class="nav-item mt-4">
+                <div class="d-flex gap-3 justify-content-center">
+                  <a href="#" class="btn btn-outline-light rounded-circle"><i class="bi bi-instagram fs-4"></i></a>
+                  <a href="#" class="btn btn-outline-warning rounded-circle"><i class="bi bi-facebook fs-4"></i></a>
+                  <a href="#" class="btn btn-outline-danger rounded-circle"><i class="bi bi-whatsapp fs-4"></i></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- =============================
+        🛒 MODAL DO CARRINHO
+  ============================= -->
+  <div class="modal fade" id="carrinhoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">🛒 Seu Carrinho</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div id="carrinho-itens-container" class="modal-body">
+          <p class="text-muted">Seu carrinho está vazio.</p>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Continuar comprando</button>
+          <button id="finalizarPedidoBtn" type="button" class="btn btn-warning">Finalizar pedido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- =============================
+            🛒 MODAL DO CARRINHO
+        ============================= -->
+      <div class="modal fade" id="carrinhoModal" tabindex="-1" aria-labelledby="carrinhoModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-white">
+
+              <div class="modal-header border-0">
+                <h5 class="modal-title" id="carrinhoModalLabel" data-i18n="cart_title">🛒 Seu Carrinho</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
               </div>
+
+              <div id="carrinho-itens-container" class="modal-body">
+                <p class="text-muted">Seu carrinho está vazio.</p>
+                <!-- Conteúdo do carrinho será inserido aqui via JavaScript futuramente -->
+              </div>
+
+              <div class="modal-footer border-0">
+                <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Continuar comprando</button>
+                <button id="finalizarPedidoBtn" type="button" class="btn btn-warning">Finalizar pedido</button>
+              </div>
+
             </div>
           </div>
-        </nav>
-      </header>
+      </div>
+    
     <!-- Main Content -->
     <main class="container" style="width:100%;">
         <!-- ================================
@@ -440,111 +499,112 @@
         ================================ -->
         <section id="porcoes" class="py-5 section-porcoes bg-light">
           <div class="container">
-            <h2 class="text-center mb-5 fw-bold titulo-secao" style="font-family: var(--font-title); color: var(--color-primary-brown);">
+            <h2 class="text-center mb-5 fw-bold titulo-secao">
               Porções
             </h2>
-
+        
             <div class="row g-4" id="porcoes-container">
+              
               <!-- Card 1 -->
-              <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
+              <article class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
                 <div class="card h-100 shadow-sm border-0 card-porcao">
-                  <img src="assets/img/cards/card2.png" class="card-img-top" alt="Batata Frita">
+                  <figure>
+                    <img src="assets/img/cards/card2.png" class="card-img-top" alt="Porção média de batata frita crocante com molho especial">
+                  </figure>
                   <div class="card-body">
                     <h5 class="card-title fw-bold">Batata Frita Média</h5>
                     <p class="card-text small">Porção média de batata crocante, acompanha molho especial da casa.</p>
                     <p class="fw-bold text-dark">R$ 12,00</p>
-                    <a href="https://wa.me/5599999999999?text=Olá,%20quero%20uma%20Batata%20Frita%20Média!" target="_blank" class="btn btn-sm text-white btn-pedir">
-                      Pedir agora
-                    </a>
+                    <a href="https://wa.me/5599999999999?text=Olá,%20quero%20uma%20Batata%20Frita%20Média!" target="_blank" class="btn btn-sm text-white btn-pedir">Pedir agora</a>
                   </div>
                 </div>
-              </div>
-
+              </article>
+        
               <!-- Card 2 -->
-              <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
+              <article class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
                 <div class="card h-100 shadow-sm border-0 card-porcao">
-                  <img src="assets/img/cards/card3.png" class="card-img-top" alt="Nuggets de Frango">
+                  <figure>
+                    <img src="assets/img/cards/card3.png" class="card-img-top" alt="Nuggets de frango empanado com molho barbecue">
+                  </figure>
                   <div class="card-body">
                     <h5 class="card-title fw-bold">Nuggets (8 unid.)</h5>
                     <p class="card-text small">Croquetes de frango empanados, servidos com ketchup ou barbecue.</p>
                     <p class="fw-bold text-dark">R$ 14,00</p>
-                    <a href="https://wa.me/5599999999999?text=Olá,%20quero%20Nuggets%20(8%20unid.)!" target="_blank" class="btn btn-sm text-white btn-pedir">
-                      Pedir agora
-                    </a>
+                    <a href="https://wa.me/5599999999999?text=Olá,%20quero%20Nuggets%20(8%20unid.)!" target="_blank" class="btn btn-sm text-white btn-pedir">Pedir agora</a>
                   </div>
                 </div>
-              </div>
-
+              </article>
+        
               <!-- Card 3 -->
-              <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
+              <article class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
                 <div class="card h-100 shadow-sm border-0 card-porcao">
-                  <img src="assets/img/cards/card3.png" class="card-img-top" alt="Mandioca Frita">
+                  <figure>
+                    <img src="assets/img/cards/card3.png" class="card-img-top" alt="Porção de mandioca frita crocante">
+                  </figure>
                   <div class="card-body">
                     <h5 class="card-title fw-bold">Mandioca Frita</h5>
                     <p class="card-text small">Mandioca crocante por fora e macia por dentro, ideal para acompanhar qualquer lanche.</p>
                     <p class="fw-bold text-dark">R$ 13,00</p>
-                    <a href="https://wa.me/5599999999999?text=Olá,%20quero%20uma%20porção%20de%20Mandioca%20Frita!" target="_blank" class="btn btn-sm text-white btn-pedir">
-                      Pedir agora
-                    </a>
+                    <a href="https://wa.me/5599999999999?text=Olá,%20quero%20uma%20porção%20de%20Mandioca%20Frita!" target="_blank" class="btn btn-sm text-white btn-pedir">Pedir agora</a>
                   </div>
                 </div>
-              </div>
-
+              </article>
+        
               <!-- Card 4 (Grupo 2 - oculto inicialmente) -->
-              <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
+              <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
                 <div class="card h-100 shadow-sm border-0 card-porcao">
-                  <img src="assets/img/cards/card2.png" class="card-img-top" alt="Anéis de Cebola">
+                  <figure>
+                    <img src="assets/img/cards/card2.png" class="card-img-top" alt="Anéis de cebola empanados com molho de pimenta suave">
+                  </figure>
                   <div class="card-body">
                     <h5 class="card-title fw-bold">Anéis de Cebola</h5>
                     <p class="card-text small">Empanados crocantes servidos com molho de pimenta suave.</p>
                     <p class="fw-bold text-dark">R$ 11,00</p>
-                    <a href="https://wa.me/5599999999999?text=Olá,%20quero%20Anéis%20de%20Cebola!" target="_blank" class="btn btn-sm text-white btn-pedir">
-                      Pedir agora
-                    </a>
+                    <a href="https://wa.me/5599999999999?text=Olá,%20quero%20Anéis%20de%20Cebola!" target="_blank" class="btn btn-sm text-white btn-pedir">Pedir agora</a>
                   </div>
                 </div>
-              </div>
-
+              </article>
+        
               <!-- Card 5 (Grupo 2) -->
-              <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
+              <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
                 <div class="card h-100 shadow-sm border-0 card-porcao">
-                  <img src="assets/img/cards/card1.png" class="card-img-top" alt="Palitos de Queijo">
+                  <figure>
+                    <img src="assets/img/cards/card1.png" class="card-img-top" alt="Palitos de queijo crocantes e recheados">
+                  </figure>
                   <div class="card-body">
                     <h5 class="card-title fw-bold">Palitos de Queijo</h5>
                     <p class="card-text small">Recheio derretido com crocância por fora. Vai bem com tudo!</p>
                     <p class="fw-bold text-dark">R$ 15,00</p>
-                    <a href="https://wa.me/5599999999999?text=Olá,%20quero%20Palitos%20de%20Queijo!" target="_blank" class="btn btn-sm text-white btn-pedir">
-                      Pedir agora
-                    </a>
+                    <a href="https://wa.me/5599999999999?text=Olá,%20quero%20Palitos%20de%20Queijo!" target="_blank" class="btn btn-sm text-white btn-pedir">Pedir agora</a>
                   </div>
                 </div>
-              </div>
-
+              </article>
+        
               <!-- Card 6 (Grupo 2) -->
-              <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
+              <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
                 <div class="card h-100 shadow-sm border-0 card-porcao">
-                  <img src="assets/img/cards/card1.png" class="card-img-top" alt="Mix de Porções">
+                  <figure>
+                    <img src="assets/img/cards/card1.png" class="card-img-top" alt="Mix com batata, nuggets e mandioca frita">
+                  </figure>
                   <div class="card-body">
                     <h5 class="card-title fw-bold">Mix da Casa</h5>
                     <p class="card-text small">Um pouco de tudo: batata, nuggets e mandioca. Ideal para compartilhar.</p>
                     <p class="fw-bold text-dark">R$ 20,00</p>
-                    <a href="https://wa.me/5599999999999?text=Olá,%20quero%20o%20Mix%20da%20Casa!" target="_blank" class="btn btn-sm text-white btn-pedir">
-                      Pedir agora
-                    </a>
+                    <a href="https://wa.me/5599999999999?text=Olá,%20quero%20o%20Mix%20da%20Casa!" target="_blank" class="btn btn-sm text-white btn-pedir">Pedir agora</a>
                   </div>
                 </div>
-              </div>
+              </article>
+        
             </div>
-
+        
             <!-- Botão Ver Mais / Ver Menos -->
             <div class="text-center mt-4">
-              <button class="btn btn-outline-dark btn-ver-toggle" onclick="toggleVerMais('porcoes-container', this)">
+              <button class="btn btn-outline-dark btn-ver-toggle" onclick="toggleVerMais('porcoes-container', this)" aria-label="Ver mais porções do cardápio">
                 Ver mais
               </button>
             </div>
           </div>
         </section>
-
         <!-- ================================
             🍨 Seção de Sobremesas
         ================================ -->
@@ -897,9 +957,10 @@
 
 
       <script src="./js/main.js"></script>
-      <script src="./js/modules/vermais.js"></script>
-      <script src="./js/modules/navbar.js"></script>
+      <script src="./js/modules/carrinho.js"></script>
+      <script src="./js/modules/horas.js"></script>
       <script src="./js/modules/scroll.js"></script>
+      <script src="./js/modules/vermais.js"></script>
       <script src="./js/modules/whatsapp.js"></script>
 
     

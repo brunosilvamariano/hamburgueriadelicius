@@ -2,75 +2,24 @@
   /* ============================
      🧭 HEADER + NAVBAR
   =============================== */
-  .navbar {
-    background-color: var(--color-primary-black);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  }
-  
   .navbar .nav-link {
     font-family: 'Bebas Neue', cursive;
-    text-transform: uppercase;
+   
     font-size: 1.1rem;
     letter-spacing: 0.05rem;
     padding: 0.5rem 1rem;
-    color: var(--text-invert);
+
   }
-  
-  .navbar .nav-link:hover {
-    color: var(--color-primary-mustard);
-  }
-  
-  .dropdown-menu {
-    background-color: var(--color-bg-dark);
-    border: none;
-    border-radius: 8px;
-  }
-  
-  .dropdown-item:hover {
-    background-color: var(--hover-burgundy-light);
-    color: var(--text-invert);
-  }
-  
-  /* ============================
-     🎯 SOCIAL ICONS
-  =============================== */
-  .social-icons a {
-    color: var(--text-invert);
-    font-size: 1.5rem;
-    transition: 0.3s ease;
-  }
-  
-  .social-icons a:hover {
-    color: var(--color-primary-mustard);
-  }
-  
-  /* ============================
-     🧾 BOTÃO DE PEDIDO
-  =============================== */
-  .btn-warning {
-    background-color: var(--color-primary-mustard);
-    border: none;
-    color: var(--text-invert);
-    font-weight: bold;
-    padding: 0.6rem 1.5rem;
-  }
-  
-  .btn-warning:hover {
-    background-color: var(--hover-mustard-dark);
-  }
-  
-  
+
   /* ============================
      🧾 BRemove borda, fundo e efeitos padrão do botão toggler
   =============================== */
-
 .navbar-toggler {
   border: none;
   box-shadow: none !important;
   padding: 0.25rem 0.5rem;
   background-color: transparent !important;
 }
-
 /* Remove o hover e o foco */
 .navbar-toggler:focus,
 .navbar-toggler:hover {
@@ -78,8 +27,12 @@
   background-color: transparent;
   outline: none;
 }
-
 /* Estiliza os 3 tracinhos (ícone do toggler) */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFB300' viewBox='0 0 30 30'%3E%3Cpath stroke='%23FFB300' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+section {
+  scroll-margin-top: 90px; /* compensa o header fixo */
+  padding-top: 10px;       /* só se quiser espaço visual */
 }
