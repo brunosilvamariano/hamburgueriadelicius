@@ -1,0 +1,70 @@
+/* Fundos personalizados */
+.bg-custom-light {
+    background-color: var(--color-bg-light);
+  }
+  
+  /* Títulos e textos */
+  .text-custom-primary {
+    color: var(--color-primary-burgundy);
+  }
+  .text-custom-secondary {
+    color: var(--text-secondary);
+  }
+  .text-custom-text {
+    color: var(--text-primary);
+  }
+  
+  /* Thumbs */
+  .categoria-thumb {
+    width: 110px;
+    height: 110px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+
+/* Responsividade das imagens circulares */
+.categoria-thumb {
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  @media (min-width: 375px) {
+    .categoria-thumb {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  @media (min-width: 425px) {
+    .categoria-thumb {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  @media (min-width: 768px) {
+    .categoria-thumb {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .categoria-thumb {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  .categoria-link:hover .categoria-thumb {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 4px var(--hover-mustard-dark);
+  }
+  
+  .categoria-link:hover figcaption {
+    color: var(--color-primary-mustard);
+  }
+  
+  /* Pequenos ajustes de tipografia */
+  figcaption {
+    font-size: 0.85rem;
+    text-align: center;
+  }
