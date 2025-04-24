@@ -273,6 +273,7 @@
                 </div>
               </div>
           </div>
+          <!-- ================🕓 SEÇÃO DE ATALHOS PARA OS MENUS ================== -->
           <section id="categorias" class="py-5 bg-custom-light" aria-labelledby="categoriasTitle">
             <div class="container text-center">
               <nav aria-label="Categorias do Cardápio">
@@ -319,92 +320,118 @@
           
             </div>
           </section>
-          
-          
+          <!-- ================================
+          🍔 Seção - Destaques do Cardápio
+          ================================ -->
+          <section id="destaques" class="py-5 section-destaques" aria-labelledby="titulo-destaques">
+            <div class="container">
+              <h2 class="text-center mb-5 fw-bold text-danger" id="titulo-destaques">
+                Destaques do Cardápio
+              </h2>
+              <div class="row g-4" role="list">
 
-
-
-
-        <!-- ================================
-        🍔 Seção - Destaques do Cardápio
-        ================================ -->
-        <section 
-          id="destaques" 
-          class="py-5 section-destaques" 
-          aria-labelledby="titulo-destaques">
-          <div class="container">
-            <!-- 🏷️ Título semântico com id para aria-labelledby -->
-            <h2 class="text-center mb-5 fw-bold titulo-destaques" id="titulo-destaques">
-              Destaques do Cardápio
-            </h2>
-            <!-- 🍔 Cards dos lanches -->
-            <div class="row g-4" role="list">
-              <!-- Card 1 - Clássico da Casa -->
-              <article class="col-lg-4 col-md-6" role="listitem">
-                <div class="card h-100 shadow-sm border-0 card-destaque">
-                  <img src="./assets/img/cards/card1.png" class="card-img-top" alt="Hambúrguer Clássico com pão brioche, hambúrguer 180g e maionese especial">
-                  <div class="card-body">
-                    <h3 class="card-title fw-bold h5">
-                      Clássico da Casa 
-                      <span class="badge bg-danger ms-2">🔥 Mais pedido</span>
-                    </h3>
-                    <p class="card-text small">
-                      Pão brioche, hambúrguer 180g, queijo cheddar e maionese especial da casa.
-                    </p>
-                    <p class="fw-bold text-dark" aria-label="Preço: vinte e oito reais e noventa centavos">R$ 28,90</p>
-                    <button class="btn btn-pedir text-white" data-produto="Clássico da Casa" data-preco="28.90">
-                      Pedir
-                    </button>
+                <!-- Clássico da Casa -->
+                <article class="col-lg-4 col-md-6" role="listitem">
+                  <div class="card h-100 shadow-sm border-0">
+                    <img src="./assets/img/cards/card1.png" class="card-img-top" alt="Hambúrguer Clássico com pão brioche, hambúrguer 180g e maionese especial">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title fw-bold h5 d-flex justify-content-between align-items-center text-danger">
+                        Clássico da Casa 
+                        <span class="badge bg-danger" title="Mais pedido da semana">🔥</span>
+                      </h3>
+                      <p class="card-text small">
+                        Pão brioche, hambúrguer 180g, queijo cheddar e maionese especial da casa.
+                      </p>
+                      <p class="fw-bold text-danger mb-2">R$ 28,90</p>
+                      <div class="d-flex align-items-center mb-3">
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1 me-2 btn-quantidade" data-action="menos">−</button>
+                        <span class="quantidade fs-6 fw-semibold">1</span>
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1 ms-2 btn-quantidade" data-action="mais">+</button>
+                      </div>
+                      <div class="mt-auto d-flex flex-column gap-2">
+                        <button class="btn btn-outline-danger btn-sm py-1 w-100 btn-add-carrinho" data-produto="Clássico da Casa" data-preco="28.90">
+                          Adicionar ao carrinho
+                        </button>
+                        <button class="btn btn-danger btn-sm py-1 w-100 text-white btn-pedir" data-produto="Clássico da Casa" data-preco="28.90">
+                          Comprar agora
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </article>
-              <!-- Card 2 - Veggie Delight -->
-              <article class="col-lg-4 col-md-6" role="listitem">
-                <div class="card h-100 shadow-sm border-0 card-destaque">
-                  <img src="./assets/img/cards/card2.png" class="card-img-top" alt="Veggie Delight com pão integral e hambúrguer de grão de bico">
-                  <div class="card-body">
-                    <h3 class="card-title fw-bold h5">
-                      Veggie Delight 
-                      <span class="badge bg-success ms-2">🌱 Veggie</span>
-                    </h3>
-                    <p class="card-text small">
-                      Pão integral, hambúrguer de grão de bico, alface americana e molho verde.
-                    </p>
-                    <p class="fw-bold text-dark" aria-label="Preço: vinte e seis reais e noventa centavos">R$ 26,90</p>
-                    <button class="btn btn-pedir text-white" data-produto="Veggie Delight" data-preco="26.90">
-                      Pedir
-                    </button>
+                </article>
+
+                <!-- Veggie Delight -->
+                <article class="col-lg-4 col-md-6" role="listitem">
+                  <div class="card h-100 shadow-sm border-0">
+                    <img src="./assets/img/cards/card2.png" class="card-img-top" alt="Hambúrguer vegetariano com grão-de-bico, salada e maionese vegana">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title fw-bold h5 d-flex justify-content-between align-items-center text-success">
+                        Veggie Delight 
+                        <span class="badge bg-success" title="Opção vegetariana">🥬</span>
+                      </h3>
+                      <p class="card-text small">
+                        Hambúrguer de grão-de-bico, salada crocante, queijo vegano e maionese especial.
+                      </p>
+                      <p class="fw-bold text-success mb-2">R$ 29,90</p>
+                      <div class="d-flex align-items-center mb-3">
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1 me-2 btn-quantidade" data-action="menos">−</button>
+                        <span class="quantidade fs-6 fw-semibold">1</span>
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1 ms-2 btn-quantidade" data-action="mais">+</button>
+                      </div>
+                      <div class="mt-auto d-flex flex-column gap-2">
+                        <button class="btn btn-outline-success btn-sm py-1 w-100 btn-add-carrinho" data-produto="Veggie Delight" data-preco="29.90">
+                          Adicionar ao carrinho
+                        </button>
+                        <button class="btn btn-success btn-sm py-1 w-100 text-white btn-pedir" data-produto="Veggie Delight" data-preco="29.90">
+                          Comprar agora
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </article>
-              <!-- Card 3 - Sunset BBQ -->
-              <article class="col-lg-4 col-md-6 mx-md-auto" role="listitem">
-                <div class="card h-100 shadow-sm border-0 card-destaque">
-                  <img src="./assets/img/cards/card3.png" class="card-img-top" alt="Sunset BBQ com pão australiano, bacon e barbecue artesanal">
-                  <div class="card-body">
-                    <h3 class="card-title fw-bold h5">
-                      Sunset BBQ 
-                      <span class="badge bg-warning text-dark ms-2">🥓 Especial</span>
-                    </h3>
-                    <p class="card-text small">
-                      Pão australiano, hambúrguer 200g, bacon crocante, cheddar duplo e barbecue artesanal.
-                    </p>
-                    <p class="fw-bold text-dark" aria-label="Preço: trinta e dois reais e noventa centavos">R$ 32,90</p>
-                    <button class="btn btn-pedir text-white" data-produto="Sunset BBQ" data-preco="32.90">
-                      Pedir
-                    </button>
+                </article>
+
+                <!-- Sunset BBQ -->
+                <article class="col-lg-4 col-md-6" role="listitem">
+                  <div class="card h-100 shadow-sm border-0">
+                    <img src="./assets/img/cards/card3.png" class="card-img-top" alt="Hambúrguer defumado com molho barbecue e cebola crispy">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title fw-bold h5 d-flex justify-content-between align-items-center text-warning">
+                        Sunset BBQ 
+                        <span class="badge bg-warning text-dark" title="Sabor defumado">🌅</span>
+                      </h3>
+                      <p class="card-text small">
+                        Hambúrguer defumado, queijo prato, molho barbecue e cebola crispy no pão australiano.
+                      </p>
+                      <p class="fw-bold text-warning mb-2">R$ 32,50</p>
+                      <div class="d-flex align-items-center mb-3">
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1 me-2 btn-quantidade" data-action="menos">−</button>
+                        <span class="quantidade fs-6 fw-semibold">1</span>
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1 ms-2 btn-quantidade" data-action="mais">+</button>
+                      </div>
+                      <div class="mt-auto d-flex flex-column gap-2">
+                        <button class="btn btn-outline-warning btn-sm py-1 w-100 text-dark btn-add-carrinho" data-produto="Sunset BBQ" data-preco="32.50">
+                          Adicionar ao carrinho
+                        </button>
+                        <button class="btn btn-warning btn-sm py-1 w-100 text-dark btn-pedir" data-produto="Sunset BBQ" data-preco="32.50">
+                          Comprar agora
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </article>
+                </article>
+
+              </div>
+
+              <!-- Link para o cardápio completo -->
+              <div class="text-center mt-5">
+                <a href="#cardapio-completo" class="btn btn-outline-dark">
+                  Ver cardápio completo
+                </a>
+              </div>
             </div>
-            <!-- 🔗 Link para o cardápio completo -->
-            <div class="text-center mt-5">
-              <a href="#cardapio-completo" class="btn btn-outline-dark btn-ver-cardapio">
-                Ver cardápio completo
-              </a>
-            </div>
-          </div>
-        </section>
+          </section>
+
+
           <!-- ================================
               🍔 SEÇÃO: CARDÁPIO DE HAMBÚRGUERES
         ================================ -->
