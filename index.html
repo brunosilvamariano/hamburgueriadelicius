@@ -111,9 +111,9 @@
                       <ul class="dropdown-menu dropdown-menu-dark">
                         <li><a class="dropdown-item" href="#destaques">🍱 Combos</a></li>
                         <li><a class="dropdown-item" href="#cardapio-hamburguer">🍔 Lanches</a></li>
-                        <li><a class="dropdown-item" href="#porcoes">🍟 Porções</a></li>
+                        <li><a class="dropdown-item" href="#cardapio-porcoes">🍟 Porções</a></li>
                         <li><a class="dropdown-item" href="#bebidas">🥤 Bebidas</a></li>
-                        <li><a class="dropdown-item" href="#sobremesas">🍰 Sobremesas</a></li>
+                        <li><a class="dropdown-item" href="#cardapio-sobremesas">🍰 Sobremesas</a></li>
                       </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link text-white" href="#sobre">🧑‍🍳 Sobre</a></li>
@@ -519,7 +519,7 @@
                     </div>
                   </div>
                 </article>
-                <!-- 🍔 Card Exemplo -->
+                  <!-- 🍔 Card Exemplo -->
                 <article class="col-lg-4 col-md-6" role="listitem">
                   <div class="card h-100 shadow rounded-4 border-0 bg-light">
                     <img src="./assets/img/cards/classico.png" class="card-img-top rounded-top-4" alt="Hambúrguer Clássico com pão brioche, hambúrguer 180g e maionese especial">
@@ -559,6 +559,7 @@
                   </div>
                 </article>
                 <!-- 🍔 Grupo 2 (inicialmente oculto) -->
+                <!-- 🍔 Grupo 2 (inicialmente oculto) -->
                 <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2" role="listitem">
                   <div class="card h-100 shadow rounded-4 border-0 bg-light">
                     <img src="./assets/img/cards/card2.png" class="card-img-top rounded-top-4" alt="Double Cheddar com cheddar duplo e cebola crispy">
@@ -592,7 +593,7 @@
                     </div>
                   </div>
                 </article>
-                 <!-- 🍔 Card Exemplo -->
+
                 <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2" role="listitem">
                   <div class="card h-100 shadow rounded-4 border-0 bg-light">
                     <img src="./assets/img/cards/card3.png" class="card-img-top rounded-top-4" alt="Texano Picante com jalapeño e molho picante">
@@ -626,7 +627,7 @@
                     </div>
                   </div>
                 </article>
-                <!-- 🍔 Card Exemplo -->
+
                 <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2" role="listitem">
                   <div class="card h-100 shadow rounded-4 border-0 bg-light">
                     <img src="./assets/img/cards/card1.png" class="card-img-top rounded-top-4" alt="Barbecue Supreme com cebola caramelizada e molho BBQ">
@@ -673,390 +674,576 @@
           <!-- ================================
               🍟 Seção de Porções
           ================================ -->
-          <section id="porcoes" class="py-5 section-porcoes bg-light">
-            <div class="container">
-              <h2 class="text-center mb-5 fw-bold titulo-secao">
-                Porções
-              </h2>
-          
-              <div class="row g-4" id="porcoes-container">
-                
-                <!-- Card 1 -->
-                <article class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
-                  <div class="card h-100 shadow-sm border-0 card-porcao">
-                    <figure>
-                      <img src="assets/img/cards/card2.png" class="card-img-top" alt="Porção média de batata frita crocante com molho especial">
-                    </figure>
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Batata Frita Média</h5>
-                      <p class="card-text small">Porção média de batata crocante, acompanha molho especial da casa.</p>
-                      <p class="fw-bold text-dark">R$ 12,00</p>
-                      <a href="https://wa.me/5599999999999?text=Olá,%20quero%20uma%20Batata%20Frita%20Média!" target="_blank" class="btn btn-sm text-white btn-pedir">Pedir agora</a>
+          <section 
+          id="cardapio-porcoes" 
+          class="py-5 section-cardapio" 
+          style="background-color: var(--color-bg-light);" 
+          aria-labelledby="titulo-cardapio-porcoes">
+          <div class="container">
+            
+            <!-- 🏷️ Título da Seção -->
+            <h2 
+              id="titulo-cardapio-porcoes" 
+              class="text-center fw-bold mb-5" 
+              style="font-family: var(--font-title); color: var(--color-primary-brown);">
+              Cardápio de Porções
+            </h2>
+        
+            <!-- 🍟 Cards de Porções -->
+            <div class="row g-4" id="porcoes-container" role="list">
+              
+              <!-- 🌟 Grupo 1 (visíveis inicialmente) -->
+              <article class="col-lg-4 col-md-6 card-item-grupo" data-group="1" role="listitem">
+                <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                  <img src="./assets/img/cards/combo.png" class="card-img-top rounded-top-4" alt="Batata Frita">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title fw-bold h5 text-dark">Batata Frita</h3>
+                    <p class="card-text small text-secondary">Porção crocante de batata palito frita na hora.</p>
+                    <p class="fw-bold text-danger fs-6 mb-2">R$ 14,90</p>
+                    <div class="d-flex align-items-center mb-3">
+                      <button class="btn btn-outline-secondary btn-sm px-2 py-1 me-2 btn-quantidade" data-action="menos">−</button>
+                      <span class="quantidade fs-6 fw-semibold">1</span>
+                      <button class="btn btn-outline-secondary btn-sm px-2 py-1 ms-2 btn-quantidade" data-action="mais">+</button>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                      <button class="btn btn-outline-dark btn-sm py-2 fw-semibold w-100 btn-add-carrinho" data-produto="Batata Frita" data-preco="14.90">
+                        Adicionar ao carrinho
+                      </button>
+                      <button class="btn btn-danger btn-sm py-2 fw-semibold w-100 text-white btn-pedir" data-produto="Batata Frita" data-preco="14.90">
+                        Comprar agora
+                      </button>
                     </div>
                   </div>
-                </article>
-          
-                <!-- Card 2 -->
-                <article class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
-                  <div class="card h-100 shadow-sm border-0 card-porcao">
-                    <figure>
-                      <img src="assets/img/cards/card3.png" class="card-img-top" alt="Nuggets de frango empanado com molho barbecue">
-                    </figure>
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Nuggets (8 unid.)</h5>
-                      <p class="card-text small">Croquetes de frango empanados, servidos com ketchup ou barbecue.</p>
-                      <p class="fw-bold text-dark">R$ 14,00</p>
-                      <a href="https://wa.me/5599999999999?text=Olá,%20quero%20Nuggets%20(8%20unid.)!" target="_blank" class="btn btn-sm text-white btn-pedir">Pedir agora</a>
+                </div>
+              </article>
+        
+              <article class="col-lg-4 col-md-6 card-item-grupo" data-group="1" role="listitem">
+                <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                  <img src="./assets/img/cards/combo.png" class="card-img-top rounded-top-4" alt="Onion Rings">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title fw-bold h5 text-dark">Onion Rings</h3>
+                    <p class="card-text small text-secondary">Anéis de cebola empanados com tempero especial.</p>
+                    <p class="fw-bold text-danger fs-6 mb-2">R$ 16,90</p>
+                    <div class="d-flex align-items-center mb-3">
+                      <button class="btn btn-outline-secondary btn-sm px-2 py-1 me-2 btn-quantidade" data-action="menos">−</button>
+                      <span class="quantidade fs-6 fw-semibold">1</span>
+                      <button class="btn btn-outline-secondary btn-sm px-2 py-1 ms-2 btn-quantidade" data-action="mais">+</button>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                      <button class="btn btn-outline-dark btn-sm py-2 fw-semibold w-100 btn-add-carrinho" data-produto="Onion Rings" data-preco="16.90">
+                        Adicionar ao carrinho
+                      </button>
+                      <button class="btn btn-danger btn-sm py-2 fw-semibold w-100 text-white btn-pedir" data-produto="Onion Rings" data-preco="16.90">
+                        Comprar agora
+                      </button>
                     </div>
                   </div>
-                </article>
-          
-                <!-- Card 3 -->
-                <article class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
-                  <div class="card h-100 shadow-sm border-0 card-porcao">
-                    <figure>
-                      <img src="assets/img/cards/card3.png" class="card-img-top" alt="Porção de mandioca frita crocante">
-                    </figure>
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Mandioca Frita</h5>
-                      <p class="card-text small">Mandioca crocante por fora e macia por dentro, ideal para acompanhar qualquer lanche.</p>
-                      <p class="fw-bold text-dark">R$ 13,00</p>
-                      <a href="https://wa.me/5599999999999?text=Olá,%20quero%20uma%20porção%20de%20Mandioca%20Frita!" target="_blank" class="btn btn-sm text-white btn-pedir">Pedir agora</a>
+                </div>
+              </article>
+        
+              <article class="col-lg-4 col-md-6 card-item-grupo" data-group="1" role="listitem">
+                <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                  <img src="./assets/img/cards/combo.png" class="card-img-top rounded-top-4" alt="Frango Empanado">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title fw-bold h5 text-dark">Frango Empanado</h3>
+                    <p class="card-text small text-secondary">Iscas de frango empanadas com molho especial.</p>
+                    <p class="fw-bold text-danger fs-6 mb-2">R$ 18,90</p>
+                    <div class="d-flex align-items-center mb-3">
+                      <button class="btn btn-outline-secondary btn-sm px-2 py-1 me-2 btn-quantidade" data-action="menos">−</button>
+                      <span class="quantidade fs-6 fw-semibold">1</span>
+                      <button class="btn btn-outline-secondary btn-sm px-2 py-1 ms-2 btn-quantidade" data-action="mais">+</button>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                      <button class="btn btn-outline-dark btn-sm py-2 fw-semibold w-100 btn-add-carrinho" data-produto="Frango Empanado" data-preco="18.90">
+                        Adicionar ao carrinho
+                      </button>
+                      <button class="btn btn-danger btn-sm py-2 fw-semibold w-100 text-white btn-pedir" data-produto="Frango Empanado" data-preco="18.90">
+                        Comprar agora
+                      </button>
                     </div>
                   </div>
-                </article>
-          
-                <!-- Card 4 (Grupo 2 - oculto inicialmente) -->
-                <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
-                  <div class="card h-100 shadow-sm border-0 card-porcao">
-                    <figure>
-                      <img src="assets/img/cards/card2.png" class="card-img-top" alt="Anéis de cebola empanados com molho de pimenta suave">
-                    </figure>
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Anéis de Cebola</h5>
-                      <p class="card-text small">Empanados crocantes servidos com molho de pimenta suave.</p>
-                      <p class="fw-bold text-dark">R$ 11,00</p>
-                      <a href="https://wa.me/5599999999999?text=Olá,%20quero%20Anéis%20de%20Cebola!" target="_blank" class="btn btn-sm text-white btn-pedir">Pedir agora</a>
+                </div>
+              </article>
+              <!-- 🍟 Grupo 2 (inicialmente ocultos) -->
+              <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2" role="listitem">
+                <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                  <img src="./assets/img/cards/especial.png" class="card-img-top rounded-top-4" alt="Mandioca Frita">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title fw-bold h5 text-dark">Mandioca Frita</h3>
+                    <p class="card-text small text-secondary">Mandioca crocante por fora e macia por dentro.</p>
+                    <p class="fw-bold text-danger fs-6 mb-2">R$ 15,90</p>
+                    <div class="d-flex align-items-center mb-3">
+                      <button class="btn btn-outline-secondary btn-sm px-2 py-1 me-2 btn-quantidade" data-action="menos">−</button>
+                      <span class="quantidade fs-6 fw-semibold">1</span>
+                      <button class="btn btn-outline-secondary btn-sm px-2 py-1 ms-2 btn-quantidade" data-action="mais">+</button>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                      <button class="btn btn-outline-dark btn-sm py-2 fw-semibold w-100 btn-add-carrinho" data-produto="Mandioca Frita" data-preco="15.90">
+                        Adicionar ao carrinho
+                      </button>
+                      <button class="btn btn-danger btn-sm py-2 fw-semibold w-100 text-white btn-pedir" data-produto="Mandioca Frita" data-preco="15.90">
+                        Comprar agora
+                      </button>
                     </div>
                   </div>
-                </article>
-          
-                <!-- Card 5 (Grupo 2) -->
-                <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
-                  <div class="card h-100 shadow-sm border-0 card-porcao">
-                    <figure>
-                      <img src="assets/img/cards/card1.png" class="card-img-top" alt="Palitos de queijo crocantes e recheados">
-                    </figure>
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Palitos de Queijo</h5>
-                      <p class="card-text small">Recheio derretido com crocância por fora. Vai bem com tudo!</p>
-                      <p class="fw-bold text-dark">R$ 15,00</p>
-                      <a href="https://wa.me/5599999999999?text=Olá,%20quero%20Palitos%20de%20Queijo!" target="_blank" class="btn btn-sm text-white btn-pedir">Pedir agora</a>
+                </div>
+              </article>
+
+              <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2" role="listitem">
+                <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                  <img src="./assets/img/cards/especial.png" class="card-img-top rounded-top-4" alt="Mini Pastéis">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title fw-bold h5 text-dark">Mini Pastéis</h3>
+                    <p class="card-text small text-secondary">Sortidos de carne, queijo e frango.</p>
+                    <p class="fw-bold text-danger fs-6 mb-2">R$ 17,90</p>
+                    <div class="d-flex align-items-center mb-3">
+                      <button class="btn btn-outline-secondary btn-sm px-2 py-1 me-2 btn-quantidade" data-action="menos">−</button>
+                      <span class="quantidade fs-6 fw-semibold">1</span>
+                      <button class="btn btn-outline-secondary btn-sm px-2 py-1 ms-2 btn-quantidade" data-action="mais">+</button>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                      <button class="btn btn-outline-dark btn-sm py-2 fw-semibold w-100 btn-add-carrinho" data-produto="Mini Pastéis" data-preco="17.90">
+                        Adicionar ao carrinho
+                      </button>
+                      <button class="btn btn-danger btn-sm py-2 fw-semibold w-100 text-white btn-pedir" data-produto="Mini Pastéis" data-preco="17.90">
+                        Comprar agora
+                      </button>
                     </div>
                   </div>
-                </article>
-          
-                <!-- Card 6 (Grupo 2) -->
-                <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
-                  <div class="card h-100 shadow-sm border-0 card-porcao">
-                    <figure>
-                      <img src="assets/img/cards/card1.png" class="card-img-top" alt="Mix com batata, nuggets e mandioca frita">
-                    </figure>
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Mix da Casa</h5>
-                      <p class="card-text small">Um pouco de tudo: batata, nuggets e mandioca. Ideal para compartilhar.</p>
-                      <p class="fw-bold text-dark">R$ 20,00</p>
-                      <a href="https://wa.me/5599999999999?text=Olá,%20quero%20o%20Mix%20da%20Casa!" target="_blank" class="btn btn-sm text-white btn-pedir">Pedir agora</a>
+                </div>
+              </article>
+
+              <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2" role="listitem">
+                <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                  <img src="./assets/img/cards/especial.png" class="card-img-top rounded-top-4" alt="Mix de Queijos">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title fw-bold h5 text-dark">Mix de Queijos</h3>
+                    <p class="card-text small text-secondary">Cubos de queijo empanado com geleia de pimenta.</p>
+                    <p class="fw-bold text-danger fs-6 mb-2">R$ 19,90</p>
+                    <div class="d-flex align-items-center mb-3">
+                      <button class="btn btn-outline-secondary btn-sm px-2 py-1 me-2 btn-quantidade" data-action="menos">−</button>
+                      <span class="quantidade fs-6 fw-semibold">1</span>
+                      <button class="btn btn-outline-secondary btn-sm px-2 py-1 ms-2 btn-quantidade" data-action="mais">+</button>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                      <button class="btn btn-outline-dark btn-sm py-2 fw-semibold w-100 btn-add-carrinho" data-produto="Mix de Queijos" data-preco="19.90">
+                        Adicionar ao carrinho
+                      </button>
+                      <button class="btn btn-danger btn-sm py-2 fw-semibold w-100 text-white btn-pedir" data-produto="Mix de Queijos" data-preco="19.90">
+                        Comprar agora
+                      </button>
                     </div>
                   </div>
-                </article>
-          
-              </div>
-          
-              <!-- Botão Ver Mais / Ver Menos -->
-              <div class="text-center mt-4">
-                <button class="btn btn-outline-dark btn-ver-toggle" onclick="toggleVerMais('porcoes-container', this)" aria-label="Ver mais porções do cardápio">
-                  Ver mais
-                </button>
-              </div>
+                </div>
+              </article>
             </div>
+            <!-- 📍 Botão Ver Mais / Ver Menos -->
+            <div class="text-center mt-4">
+              <button class="btn btn-outline-dark btn-ver-toggle" onclick="toggleVerMais('porcoes-container', this)">
+                Ver mais
+              </button>
+            </div>
+          </div>
           </section>
           <!-- ================================
               🍨 Seção de Sobremesas
           ================================ -->
-          <section id="sobremesas" class="py-5 section-sobremesas bg-light">
-            <div class="container">
-              <h2 class="text-center mb-5 fw-bold titulo-secao" style="font-family: var(--font-title); color: var(--color-primary-brown);">
-                Sobremesas
-              </h2>
+          <section 
+          id="cardapio-sobremesas" 
+          class="py-5 section-cardapio" 
+          style="background-color: var(--color-bg-light);" 
+          aria-labelledby="titulo-cardapio-sobremesas">
+          <div class="container">
+            
+            <!-- 🏷️ Título da Seção -->
+            <h2 
+              id="titulo-cardapio-sobremesas" 
+              class="text-center fw-bold mb-5" 
+              style="font-family: var(--font-title); color: var(--color-primary-brown);">
+              Cardápio de Sobremesas
+            </h2>
 
-              <div class="row g-4" id="sobremesas-container">
-                <!-- Card 1 -->
-                <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
-                  <div class="card h-100 shadow-sm border-0 card-sobremesa">
-                    <img src="assets/img/cards/card3.png" class="card-img-top" alt="Brownie com Sorvete">
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Brownie com Sorvete</h5>
-                      <p class="card-text small">Brownie caseiro com casquinha crocante e sorvete de creme.</p>
-                      <p class="fw-bold text-dark">R$ 14,00</p>
-                      <a href="https://wa.me/5599999999999?text=Olá,%20quero%20um%20Brownie%20com%20Sorvete!" target="_blank" class="btn btn-sm text-white btn-pedir">
-                        Pedir agora
-                      </a>
+            <!-- 🍰 Cards de Sobremesas -->
+            <div class="row g-4" id="sobremesas-container" role="list">
+              
+              <!-- GRUPO 1 (Visível) -->
+              <article class="col-lg-4 col-md-6 card-item-grupo" data-group="1" role="listitem">
+                <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                  <img src="./assets/img/cards/classico.png" class="card-img-top rounded-top-4" alt="Petit Gateau">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title fw-bold h5 text-dark">Petit Gateau</h3>
+                    <p class="card-text small text-secondary">Bolo quente com recheio de chocolate e sorvete de creme.</p>
+                    <p class="fw-bold text-danger fs-6 mb-2">R$ 12,90</p>
+                    <div class="d-flex align-items-center mb-3">
+                      <button class="btn btn-outline-secondary btn-sm me-2 btn-quantidade" data-action="menos">−</button>
+                      <span class="quantidade fs-6 fw-semibold">1</span>
+                      <button class="btn btn-outline-secondary btn-sm ms-2 btn-quantidade" data-action="mais">+</button>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                      <button class="btn btn-outline-dark btn-sm btn-add-carrinho" data-produto="Petit Gateau" data-preco="12.90">Adicionar ao carrinho</button>
+                      <button class="btn btn-danger btn-sm text-white btn-pedir" data-produto="Petit Gateau" data-preco="12.90">Comprar agora</button>
                     </div>
                   </div>
                 </div>
+              </article>
 
-                <!-- Card 2 -->
-                <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
-                  <div class="card h-100 shadow-sm border-0 card-sobremesa">
-                    <img src="assets/img/cards/card1.png" class="card-img-top" alt="Petit Gâteau">
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Petit Gâteau</h5>
-                      <p class="card-text small">Bolo com recheio cremoso e sorvete de creme. Um clássico!</p>
-                      <p class="fw-bold text-dark">R$ 16,00</p>
-                      <a href="https://wa.me/5599999999999?text=Olá,%20quero%20um%20Petit%20Gâteau!" target="_blank" class="btn btn-sm text-white btn-pedir">
-                        Pedir agora
-                      </a>
+              <article class="col-lg-4 col-md-6 card-item-grupo" data-group="1" role="listitem">
+                <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                  <img src="./assets/img/cards/classico.png" class="card-img-top rounded-top-4" alt="Pudim de Leite">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title fw-bold h5 text-dark">Pudim de Leite</h3>
+                    <p class="card-text small text-secondary">Clássico pudim com calda de caramelo.</p>
+                    <p class="fw-bold text-danger fs-6 mb-2">R$ 9,90</p>
+                    <div class="d-flex align-items-center mb-3">
+                      <button class="btn btn-outline-secondary btn-sm me-2 btn-quantidade" data-action="menos">−</button>
+                      <span class="quantidade fs-6 fw-semibold">1</span>
+                      <button class="btn btn-outline-secondary btn-sm ms-2 btn-quantidade" data-action="mais">+</button>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                      <button class="btn btn-outline-dark btn-sm btn-add-carrinho" data-produto="Pudim de Leite" data-preco="9.90">Adicionar ao carrinho</button>
+                      <button class="btn btn-danger btn-sm text-white btn-pedir" data-produto="Pudim de Leite" data-preco="9.90">Comprar agora</button>
                     </div>
                   </div>
                 </div>
+              </article>
 
-                <!-- Card 3 -->
-                <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
-                  <div class="card h-100 shadow-sm border-0 card-sobremesa">
-                    <img src="assets/img/cards/card1.png" class="card-img-top" alt="Milkshake de Chocolate">
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Milkshake de Chocolate</h5>
-                      <p class="card-text small">Milkshake cremoso feito com sorvete premium e calda intensa.</p>
-                      <p class="fw-bold text-dark">R$ 12,00</p>
-                      <a href="https://wa.me/5599999999999?text=Olá,%20quero%20um%20Milkshake%20de%20Chocolate!" target="_blank" class="btn btn-sm text-white btn-pedir">
-                        Pedir agora
-                      </a>
+              <article class="col-lg-4 col-md-6 card-item-grupo" data-group="1" role="listitem">
+                <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                  <img src="./assets/img/cards/classico.png" class="card-img-top rounded-top-4" alt="Mousse de Maracujá">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title fw-bold h5 text-dark">Mousse de Maracujá</h3>
+                    <p class="card-text small text-secondary">Sobremesa leve e refrescante com toque cítrico.</p>
+                    <p class="fw-bold text-danger fs-6 mb-2">R$ 8,90</p>
+                    <div class="d-flex align-items-center mb-3">
+                      <button class="btn btn-outline-secondary btn-sm me-2 btn-quantidade" data-action="menos">−</button>
+                      <span class="quantidade fs-6 fw-semibold">1</span>
+                      <button class="btn btn-outline-secondary btn-sm ms-2 btn-quantidade" data-action="mais">+</button>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                      <button class="btn btn-outline-dark btn-sm btn-add-carrinho" data-produto="Mousse de Maracujá" data-preco="8.90">Adicionar ao carrinho</button>
+                      <button class="btn btn-danger btn-sm text-white btn-pedir" data-produto="Mousse de Maracujá" data-preco="8.90">Comprar agora</button>
                     </div>
                   </div>
                 </div>
+              </article>
 
-                <!-- Card 4 (Grupo 2 - oculto inicialmente) -->
-                <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
-                  <div class="card h-100 shadow-sm border-0 card-sobremesa">
-                    <img src="assets/img/cards/card2.png" class="card-img-top" alt="Pudim de Leite">
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Pudim de Leite</h5>
-                      <p class="card-text small">Tradicional e irresistível, com calda de caramelo feita na hora.</p>
-                      <p class="fw-bold text-dark">R$ 10,00</p>
-                      <a href="https://wa.me/5599999999999?text=Olá,%20quero%20um%20Pudim%20de%20Leite!" target="_blank" class="btn btn-sm text-white btn-pedir">
-                        Pedir agora
-                      </a>
+              <!-- GRUPO 2 (Escondido) -->
+              <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2" role="listitem">
+                <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                  <img src="./assets/img/cards/combo.png" class="card-img-top rounded-top-4" alt="Brigadeiro Gourmet">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title fw-bold h5 text-dark">Brigadeiro Gourmet</h3>
+                    <p class="card-text small text-secondary">Feito com chocolate belga e leite condensado premium.</p>
+                    <p class="fw-bold text-danger fs-6 mb-2">R$ 5,90</p>
+                    <div class="d-flex align-items-center mb-3">
+                      <button class="btn btn-outline-secondary btn-sm me-2 btn-quantidade" data-action="menos">−</button>
+                      <span class="quantidade fs-6 fw-semibold">1</span>
+                      <button class="btn btn-outline-secondary btn-sm ms-2 btn-quantidade" data-action="mais">+</button>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                      <button class="btn btn-outline-dark btn-sm btn-add-carrinho" data-produto="Brigadeiro Gourmet" data-preco="5.90">Adicionar ao carrinho</button>
+                      <button class="btn btn-danger btn-sm text-white btn-pedir" data-produto="Brigadeiro Gourmet" data-preco="5.90">Comprar agora</button>
                     </div>
                   </div>
                 </div>
+              </article>
 
-                <!-- Card 5 (Grupo 2) -->
-                <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
-                  <div class="card h-100 shadow-sm border-0 card-sobremesa">
-                    <img src="assets/img/cards/card3.png" class="card-img-top" alt="Bolo de Cenoura">
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Bolo de Cenoura com Calda</h5>
-                      <p class="card-text small">Receita da vovó com cobertura quente de chocolate meio amargo.</p>
-                      <p class="fw-bold text-dark">R$ 11,00</p>
-                      <a href="https://wa.me/5599999999999?text=Olá,%20quero%20um%20Bolo%20de%20Cenoura!" target="_blank" class="btn btn-sm text-white btn-pedir">
-                        Pedir agora
-                      </a>
+              <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2" role="listitem">
+                <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                  <img src="./assets/img/cards/combo.png" class="card-img-top rounded-top-4" alt="Cheesecake com Frutas Vermelhas">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title fw-bold h5 text-dark">Cheesecake com Frutas Vermelhas</h3>
+                    <p class="card-text small text-secondary">Base crocante, creme de queijo e cobertura de frutas vermelhas.</p>
+                    <p class="fw-bold text-danger fs-6 mb-2">R$ 13,90</p>
+                    <div class="d-flex align-items-center mb-3">
+                      <button class="btn btn-outline-secondary btn-sm me-2 btn-quantidade" data-action="menos">−</button>
+                      <span class="quantidade fs-6 fw-semibold">1</span>
+                      <button class="btn btn-outline-secondary btn-sm ms-2 btn-quantidade" data-action="mais">+</button>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                      <button class="btn btn-outline-dark btn-sm btn-add-carrinho" data-produto="Cheesecake" data-preco="13.90">Adicionar ao carrinho</button>
+                      <button class="btn btn-danger btn-sm text-white btn-pedir" data-produto="Cheesecake" data-preco="13.90">Comprar agora</button>
                     </div>
                   </div>
                 </div>
+              </article>
 
-                <!-- Card 6 (Grupo 2) -->
-                <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
-                  <div class="card h-100 shadow-sm border-0 card-sobremesa">
-                    <img src="assets/img/cards/card2.png" class="card-img-top" alt="Paleta Mexicana">
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Paleta Mexicana</h5>
-                      <p class="card-text small">Sorvete recheado de frutas com pedaços naturais. Leve e refrescante!</p>
-                      <p class="fw-bold text-dark">R$ 9,00</p>
-                      <a href="https://wa.me/5599999999999?text=Olá,%20quero%20uma%20Paleta%20Mexicana!" target="_blank" class="btn btn-sm text-white btn-pedir">
-                        Pedir agora
-                      </a>
+              <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2" role="listitem">
+                <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                  <img src="./assets/img/cards/combo.png" class="card-img-top rounded-top-4" alt="Cheesecake com Frutas Vermelhas">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title fw-bold h5 text-dark">Cheesecake com Frutas Vermelhas</h3>
+                    <p class="card-text small text-secondary">Base crocante, creme de queijo e cobertura de frutas vermelhas.</p>
+                    <p class="fw-bold text-danger fs-6 mb-2">R$ 13,90</p>
+                    <div class="d-flex align-items-center mb-3">
+                      <button class="btn btn-outline-secondary btn-sm me-2 btn-quantidade" data-action="menos">−</button>
+                      <span class="quantidade fs-6 fw-semibold">1</span>
+                      <button class="btn btn-outline-secondary btn-sm ms-2 btn-quantidade" data-action="mais">+</button>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                      <button class="btn btn-outline-dark btn-sm btn-add-carrinho" data-produto="Cheesecake" data-preco="13.90">Adicionar ao carrinho</button>
+                      <button class="btn btn-danger btn-sm text-white btn-pedir" data-produto="Cheesecake" data-preco="13.90">Comprar agora</button>
                     </div>
                   </div>
                 </div>
-              </div>
-
-              <!-- Botão Ver Mais / Ver Menos -->
-              <div class="text-center mt-4">
-                <button class="btn btn-outline-dark btn-ver-toggle" onclick="toggleVerMais('sobremesas-container', this)">
-                  Ver mais
-                </button>
-              </div>
+              </article>
             </div>
-          </section>
 
+            <!-- 🔄 Botão Ver Mais -->
+            <div class="text-center mt-4">
+              <button class="btn btn-outline-dark btn-ver-toggle px-4 py-2 fw-semibold" onclick="toggleVerMais('sobremesas-container', this)">
+                Ver mais
+              </button>
+            </div>
+          </div>
+          </section>
           <!-- ================================
               🥤 Seção de Bebidas
           ================================ -->
-          <section id="bebidas" class="py-5 section-bebidas bg-light">
-            <div class="container">
-              <h2 class="text-center mb-5 fw-bold titulo-secao" style="font-family: var(--font-title); color: var(--color-primary-brown);">
-                Bebidas
-              </h2>
+          <section 
+          id="cardapio-bebidas" 
+          class="py-5 section-cardapio" 
+          style="background-color: var(--color-bg-light);" 
+          aria-labelledby="titulo-cardapio-bebidas">
+          <div class="container">
+            
+            <!-- 🏷️ Título da Seção -->
+            <h2 
+              id="titulo-cardapio-bebidas" 
+              class="text-center fw-bold mb-5" 
+              style="font-family: var(--font-title); color: var(--color-primary-brown);">
+              Cardápio de Bebidas
+            </h2>
 
-              <div class="row g-4" id="bebidas-container">
-                <!-- Card 1 -->
-                <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
-                  <div class="card h-100 shadow-sm border-0 card-bebida">
-                    <img src="assets/img/cards/card1.png" class="card-img-top" alt="Coca-Cola Lata">
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Coca-Cola Lata (350ml)</h5>
-                      <p class="card-text small">Bebida geladinha para acompanhar seu lanche.</p>
-                      <p class="fw-bold text-dark">R$ 6,00</p>
-                      <a href="https://wa.me/5599999999999?text=Quero%20uma%20Coca-Cola%20Lata!" target="_blank" class="btn btn-sm text-white btn-pedir">
-                        Pedir agora
-                      </a>
+            <!-- 🧃 Cards de Bebidas -->
+            <div class="row g-4" id="bebidas-container" role="list">
+              
+              <!-- GRUPO 1 (Visível) -->
+              <article class="col-lg-4 col-md-6 card-item-grupo" data-group="1" role="listitem">
+                <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                  <img src="./assets/img/cards/combo.png" class="card-img-top rounded-top-4" alt="Coca-Cola Lata">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title fw-bold h5 text-dark">Coca-Cola (Lata)</h3>
+                    <p class="card-text small text-secondary">350ml, gelada.</p>
+                    <p class="fw-bold text-danger fs-6 mb-2">R$ 6,00</p>
+                    <div class="d-flex align-items-center mb-3">
+                      <button class="btn btn-outline-secondary btn-sm me-2 btn-quantidade" data-action="menos">−</button>
+                      <span class="quantidade fs-6 fw-semibold">1</span>
+                      <button class="btn btn-outline-secondary btn-sm ms-2 btn-quantidade" data-action="mais">+</button>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                      <button class="btn btn-outline-dark btn-sm btn-add-carrinho" data-produto="Coca-Cola Lata" data-preco="6.00">Adicionar ao carrinho</button>
+                      <button class="btn btn-danger btn-sm text-white btn-pedir" data-produto="Coca-Cola Lata" data-preco="6.00">Comprar agora</button>
                     </div>
                   </div>
                 </div>
+              </article>
 
-                <!-- Card 2 -->
-                <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
-                  <div class="card h-100 shadow-sm border-0 card-bebida">
-                    <img src="assets/img/cards/card3.png" class="card-img-top" alt="Guaraná Antarctica Lata">
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Guaraná Lata (350ml)</h5>
-                      <p class="card-text small">Sabor brasileiro tradicional e refrescante.</p>
-                      <p class="fw-bold text-dark">R$ 5,00</p>
-                      <a href="https://wa.me/5599999999999?text=Quero%20um%20Guaraná%20Antarctica!" target="_blank" class="btn btn-sm text-white btn-pedir">
-                        Pedir agora
-                      </a>
+              <article class="col-lg-4 col-md-6 card-item-grupo" data-group="1" role="listitem">
+                <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                  <img src="./assets/img/cards/combo.png" class="card-img-top rounded-top-4" alt="Fanta Laranja">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title fw-bold h5 text-dark">Fanta Laranja</h3>
+                    <p class="card-text small text-secondary">Lata 350ml, gelada.</p>
+                    <p class="fw-bold text-danger fs-6 mb-2">R$ 6,00</p>
+                    <div class="d-flex align-items-center mb-3">
+                      <button class="btn btn-outline-secondary btn-sm me-2 btn-quantidade" data-action="menos">−</button>
+                      <span class="quantidade fs-6 fw-semibold">1</span>
+                      <button class="btn btn-outline-secondary btn-sm ms-2 btn-quantidade" data-action="mais">+</button>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                      <button class="btn btn-outline-dark btn-sm btn-add-carrinho" data-produto="Fanta Laranja" data-preco="6.00">Adicionar ao carrinho</button>
+                      <button class="btn btn-danger btn-sm text-white btn-pedir" data-produto="Fanta Laranja" data-preco="6.00">Comprar agora</button>
                     </div>
                   </div>
                 </div>
+              </article>
 
-                <!-- Card 3 -->
-                <div class="col-lg-4 col-md-6 card-item-grupo" data-group="1">
-                  <div class="card h-100 shadow-sm border-0 card-bebida">
-                    <img src="assets/img/cards/card2.png" class="card-img-top" alt="Fanta Laranja">
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Fanta Laranja (350ml)</h5>
-                      <p class="card-text small">Refresco leve e frutado, perfeito para dias quentes.</p>
-                      <p class="fw-bold text-dark">R$ 5,00</p>
-                      <a href="https://wa.me/5599999999999?text=Quero%20uma%20Fanta%20Laranja!" target="_blank" class="btn btn-sm text-white btn-pedir">
-                        Pedir agora
-                      </a>
+              <article class="col-lg-4 col-md-6 card-item-grupo" data-group="1" role="listitem">
+                <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                  <img src="./assets/img/cards/combo.png" class="card-img-top rounded-top-4" alt="Guaraná Antarctica">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title fw-bold h5 text-dark">Guaraná Antarctica</h3>
+                    <p class="card-text small text-secondary">Lata 350ml, gelada.</p>
+                    <p class="fw-bold text-danger fs-6 mb-2">R$ 6,00</p>
+                    <div class="d-flex align-items-center mb-3">
+                      <button class="btn btn-outline-secondary btn-sm me-2 btn-quantidade" data-action="menos">−</button>
+                      <span class="quantidade fs-6 fw-semibold">1</span>
+                      <button class="btn btn-outline-secondary btn-sm ms-2 btn-quantidade" data-action="mais">+</button>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                      <button class="btn btn-outline-dark btn-sm btn-add-carrinho" data-produto="Guaraná Antarctica" data-preco="6.00">Adicionar ao carrinho</button>
+                      <button class="btn btn-danger btn-sm text-white btn-pedir" data-produto="Guaraná Antarctica" data-preco="6.00">Comprar agora</button>
                     </div>
                   </div>
                 </div>
+              </article>
 
-                <!-- Card 4 (Grupo 2 - oculto inicialmente) -->
-                <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
-                  <div class="card h-100 shadow-sm border-0 card-bebida">
-                    <img src="assets/img/cards/card1.png" class="card-img-top" alt="Suco de Limão">
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Suco Natural de Limão</h5>
-                      <p class="card-text small">Refrescante, azedinho na medida e sem conservantes.</p>
-                      <p class="fw-bold text-dark">R$ 7,00</p>
-                      <a href="https://wa.me/5599999999999?text=Quero%20um%20Suco%20de%20Limão!" target="_blank" class="btn btn-sm text-white btn-pedir">
-                        Pedir agora
-                      </a>
+              <!-- GRUPO 2 (Escondido) -->
+              <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2" role="listitem">
+                <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                  <img src="./assets/img/cards/classico.png" class="card-img-top rounded-top-4" alt="Suco de Laranja Natural">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title fw-bold h5 text-dark">Suco de Laranja Natural</h3>
+                    <p class="card-text small text-secondary">Copo 300ml, sem açúcar.</p>
+                    <p class="fw-bold text-danger fs-6 mb-2">R$ 7,00</p>
+                    <div class="d-flex align-items-center mb-3">
+                      <button class="btn btn-outline-secondary btn-sm me-2 btn-quantidade" data-action="menos">−</button>
+                      <span class="quantidade fs-6 fw-semibold">1</span>
+                      <button class="btn btn-outline-secondary btn-sm ms-2 btn-quantidade" data-action="mais">+</button>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                      <button class="btn btn-outline-dark btn-sm btn-add-carrinho" data-produto="Suco de Laranja" data-preco="7.00">Adicionar ao carrinho</button>
+                      <button class="btn btn-danger btn-sm text-white btn-pedir" data-produto="Suco de Laranja" data-preco="7.00">Comprar agora</button>
                     </div>
                   </div>
                 </div>
+              </article>
 
-                <!-- Card 5 (Grupo 2) -->
-                <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
-                  <div class="card h-100 shadow-sm border-0 card-bebida">
-                    <img src="assets/img/cards/card3.png" class="card-img-top" alt="Suco de Laranja">
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Suco Natural de Laranja</h5>
-                      <p class="card-text small">Feito na hora, 100% fruta. Sem adição de açúcar.</p>
-                      <p class="fw-bold text-dark">R$ 7,00</p>
-                      <a href="https://wa.me/5599999999999?text=Quero%20um%20Suco%20de%20Laranja!" target="_blank" class="btn btn-sm text-white btn-pedir">
-                        Pedir agora
-                      </a>
+              <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2" role="listitem">
+                <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                  <img src="./assets/img/cards/classico.png" class="card-img-top rounded-top-4" alt="Suco de Limão Natural">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title fw-bold h5 text-dark">Suco de Limão Natural</h3>
+                    <p class="card-text small text-secondary">Copo 300ml, levemente adoçado.</p>
+                    <p class="fw-bold text-danger fs-6 mb-2">R$ 7,00</p>
+                    <div class="d-flex align-items-center mb-3">
+                      <button class="btn btn-outline-secondary btn-sm me-2 btn-quantidade" data-action="menos">−</button>
+                      <span class="quantidade fs-6 fw-semibold">1</span>
+                      <button class="btn btn-outline-secondary btn-sm ms-2 btn-quantidade" data-action="mais">+</button>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                      <button class="btn btn-outline-dark btn-sm btn-add-carrinho" data-produto="Suco de Limão" data-preco="7.00">Adicionar ao carrinho</button>
+                      <button class="btn btn-danger btn-sm text-white btn-pedir" data-produto="Suco de Limão" data-preco="7.00">Comprar agora</button>
                     </div>
                   </div>
                 </div>
+              </article>
 
-                <!-- Card 6 (Grupo 2) -->
-                <div class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2">
-                  <div class="card h-100 shadow-sm border-0 card-bebida">
-                    <img src="assets/img/cards/card2.png" class="card-img-top" alt="Água Mineral">
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Água Mineral</h5>
-                      <p class="card-text small">Sem gás, pura e essencial.</p>
-                      <p class="fw-bold text-dark">R$ 3,00</p>
-                      <a href="https://wa.me/5599999999999?text=Quero%20uma%20Água%20Mineral!" target="_blank" class="btn btn-sm text-white btn-pedir">
-                        Pedir agora
-                      </a>
+              <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2" role="listitem">
+                <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                  <img src="./assets/img/cards/classico.png" class="card-img-top rounded-top-4" alt="Suco de Limão Natural">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title fw-bold h5 text-dark">Suco de Limão Natural</h3>
+                    <p class="card-text small text-secondary">Copo 300ml, levemente adoçado.</p>
+                    <p class="fw-bold text-danger fs-6 mb-2">R$ 7,00</p>
+                    <div class="d-flex align-items-center mb-3">
+                      <button class="btn btn-outline-secondary btn-sm me-2 btn-quantidade" data-action="menos">−</button>
+                      <span class="quantidade fs-6 fw-semibold">1</span>
+                      <button class="btn btn-outline-secondary btn-sm ms-2 btn-quantidade" data-action="mais">+</button>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                      <button class="btn btn-outline-dark btn-sm btn-add-carrinho" data-produto="Suco de Limão" data-preco="7.00">Adicionar ao carrinho</button>
+                      <button class="btn btn-danger btn-sm text-white btn-pedir" data-produto="Suco de Limão" data-preco="7.00">Comprar agora</button>
                     </div>
                   </div>
                 </div>
-              </div>
-
-              <!-- Botão Ver Mais / Ver Menos -->
-              <div class="text-center mt-4">
-                <button class="btn btn-outline-dark btn-ver-toggle" onclick="toggleVerMais('bebidas-container', this)">
-                  Ver mais
-                </button>
-              </div>
+              </article>
             </div>
+
+            <!-- 🔄 Botão Ver Mais -->
+            <div class="text-center mt-4">
+              <button class="btn btn-outline-dark btn-ver-toggle px-4 py-2 fw-semibold" onclick="toggleVerMais('bebidas-container', this)">
+                Ver mais
+              </button>
+            </div>
+          </div>
           </section>
 
-          <!-- Botão que abre o offcanvas -->
-          <div id="sobre" class="text-center py-5">
+          <!-- Seção SOBRE -->
+          <section id="sobre" class="text-center py-5 mb-5">
             <button 
-              class="btn btn-sobre" 
+              class="btn btn-lg fw-semibold shadow-sm" 
               type="button" 
               data-bs-toggle="offcanvas" 
               data-bs-target="#sobreBottom" 
-              aria-controls="sobreBottom">
+              aria-controls="sobreBottom"
+              style="
+                background-color: var(--btn-mustard);
+                color: var(--text-invert);
+                font-family: var(--font-accent);
+                border-radius: var(--radius-pill);
+                padding: var(--space-sm) var(--space-lg);
+                font-size: var(--fs-md);
+                transition: var(--transition-fast);
+              "
+              onmouseover="this.style.backgroundColor='var(--hover-mustard-dark)'"
+              onmouseout="this.style.backgroundColor='var(--btn-mustard)'"
+            >
               Sobre a Hamburgueria
             </button>
-          </div>
-          <!-- Offcanvas Bottom -->
-          <div 
-            class="offcanvas offcanvas-bottom" 
+          </section>
+
+          <!-- Offcanvas Bottom com conteúdo semântico -->
+          <aside 
+            class="offcanvas offcanvas-bottom shadow-lg" 
             tabindex="-1" 
             id="sobreBottom" 
-            aria-labelledby="sobreBottomLabel">
-            
-            <div class="offcanvas-header px-4 pt-4">
-              <h5 class="offcanvas-title" id="sobreBottomLabel">
+            aria-labelledby="sobreBottomLabel" 
+            style="
+              height: 80vh;
+              background-color: var(--color-bg-light);
+              color: var(--text-primary);
+              border-top-left-radius: var(--radius-card);
+              border-top-right-radius: var(--radius-card);
+              padding-bottom: var(--space-lg);
+            "
+          >
+            <header class="offcanvas-header px-4 pt-4">
+              <h2 
+                class="offcanvas-title fw-bold" 
+                id="sobreBottomLabel"
+                style="font-family: var(--font-title); font-size: var(--fs-xl);"
+              >
                 Nossa História
-              </h5>
+              </h2>
               <button 
                 type="button" 
                 class="btn-close" 
                 data-bs-dismiss="offcanvas" 
                 aria-label="Fechar"></button>
-            </div>
+            </header>
 
-            <div class="offcanvas-body px-4">
+            <main class="offcanvas-body px-4">
               <div class="row align-items-center gy-4">
                 
-                <!-- Imagem -->
-                <div class="col-md-5">
+                <!-- Imagem ilustrativa -->
+                <figure class="col-md-5">
                   <img 
                     src="assets/img/banner/banner.png" 
                     alt="Equipe da Hamburgueria" 
-                    class="img-fluid img-sobre">
-                </div>
+                    class="img-fluid rounded-4 shadow-sm"
+                    style="border: var(--border-light);">
+                  <figcaption class="visually-hidden">Imagem da equipe da hamburgueria</figcaption>
+                </figure>
 
-                <!-- Texto -->
-                <div class="col-md-7">
-                  <p class="texto-sobre">
+                <!-- Texto com descrição -->
+                <article class="col-md-7">
+                  <p class="lead" style="font-family: var(--font-body); font-size: var(--fs-base); line-height: 1.6;">
                     Fundada com amor e dedicação em 2018, nossa hamburgueria nasceu de um sonho antigo: unir ingredientes frescos, sabor de verdade e um ambiente acolhedor. Começamos em um pequeno food truck e hoje temos orgulho de servir centenas de pessoas toda semana.
                   </p>
-                  <p class="texto-sobre">
+                  <p style="font-family: var(--font-body); font-size: var(--fs-base); line-height: 1.6;">
                     Cada hambúrguer carrega nossa identidade: pão artesanal, blends exclusivos e acompanhamentos que fazem toda diferença. Tudo feito com carinho — do preparo ao atendimento.
                   </p>
-                  <p class="destaque-sobre">
+                  <p 
+                    class="fw-semibold fs-5"
+                    style="color: var(--color-primary-mustard); font-family: var(--font-accent);"
+                  >
                     🍔 Sinta-se em casa. Esse sabor tem história!
                   </p>
-                </div>
+                </article>
 
               </div>
-            </div>
-          </div>
+            </main>
+          </aside>
+
+          <!-- Script para rolar até o botão ao fechar -->
+          <script>
+            const offcanvasSobre = document.getElementById('sobreBottom');
+            offcanvasSobre.addEventListener('hidden.bs.offcanvas', () => {
+              document.getElementById('sobre').scrollIntoView({ behavior: 'smooth' });
+            });
+          </script>
       </main>
 
       <footer id="contato" class="footer text-white pt-5 pb-4 mt-5">
