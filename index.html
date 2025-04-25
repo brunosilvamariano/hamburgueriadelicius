@@ -274,50 +274,41 @@
               </div>
           </div>
           <!-- ================🕓 SEÇÃO DE ATALHOS PARA OS MENUS ================== -->
-          <section id="categorias" class="py-5 bg-custom-light" aria-labelledby="categoriasTitle">
-            <div class="container text-center">
+          <section id="categorias" class="py-3 bg-custom-light border-top border-bottom">
+            <div class="container">
               <nav aria-label="Categorias do Cardápio">
-                <ul class="row g-3 justify-content-center list-unstyled">
-          
-                  <li class="col-6 col-sm-6 col-md-4 col-lg-3">
-                    <a href="#cardapio-hamburguer" class="categoria-link text-decoration-none d-flex flex-column align-items-center">
-                      <figure class="categoria-thumb rounded-circle overflow-hidden shadow-sm mb-2">
-                        <img src="assets/img/categorias/burguer.png" alt="Ir para a seção de Hambúrgueres" class="img-fluid w-100 h-100 object-fit-cover">
-                      </figure>
-                      <figcaption class="small fw-semibold text-custom-text">Hambúrgueres</figcaption>
+                <ul class="row row-cols-2 row-cols-sm-4 g-2 justify-content-center list-unstyled m-0">
+                  
+                  <!-- Hambúrgueres -->
+                  <li class="col">
+                    <a href="#cardapio-hamburguer" class="d-flex align-items-center justify-content-center gap-2 p-2 bg-white rounded shadow-sm text-decoration-none h-100"> 
+                      <span class="small fw-semibold text-dark">Hambúrgueres</span>
                     </a>
                   </li>
           
-                  <li class="col-6 col-sm-6 col-md-4 col-lg-3">
-                    <a href="#porcoes" class="categoria-link text-decoration-none d-flex flex-column align-items-center">
-                      <figure class="categoria-thumb rounded-circle overflow-hidden shadow-sm mb-2">
-                        <img src="assets/img/categorias/porcoes.png" alt="Ir para a seção de Porções" class="img-fluid w-100 h-100 object-fit-cover">
-                      </figure>
-                      <figcaption class="small fw-semibold text-custom-text">Porções</figcaption>
+                  <!-- Porções -->
+                  <li class="col">
+                    <a href="#porcoes" class="d-flex align-items-center justify-content-center gap-2 p-2 bg-white rounded shadow-sm text-decoration-none h-100">
+                      <span class="small fw-semibold text-dark">Porções</span>
                     </a>
                   </li>
           
-                  <li class="col-6 col-sm-6 col-md-4 col-lg-3">
-                    <a href="#bebidas" class="categoria-link text-decoration-none d-flex flex-column align-items-center">
-                      <figure class="categoria-thumb rounded-circle overflow-hidden shadow-sm mb-2">
-                        <img src="assets/img/categorias/drinks.png" alt="Ir para a seção de Bebidas" class="img-fluid w-100 h-100 object-fit-cover">
-                      </figure>
-                      <figcaption class="small fw-semibold text-custom-text">Bebidas</figcaption>
+                  <!-- Bebidas -->
+                  <li class="col">
+                    <a href="#bebidas" class="d-flex align-items-center justify-content-center gap-2 p-2 bg-white rounded shadow-sm text-decoration-none h-100">
+                      <span class="small fw-semibold text-dark">Bebidas</span>
                     </a>
                   </li>
           
-                  <li class="col-6 col-sm-6 col-md-4 col-lg-3">
-                    <a href="#sobremesas" class="categoria-link text-decoration-none d-flex flex-column align-items-center">
-                      <figure class="categoria-thumb rounded-circle overflow-hidden shadow-sm mb-2">
-                        <img src="assets/img/categorias/doces.png" alt="Ir para a seção de Sobremesas" class="img-fluid w-100 h-100 object-fit-cover">
-                      </figure>
-                      <figcaption class="small fw-semibold text-custom-text">Sobremesas</figcaption>
+                  <!-- Sobremesas -->
+                  <li class="col">
+                    <a href="#sobremesas" class="d-flex align-items-center justify-content-center gap-2 p-2 bg-white rounded shadow-sm text-decoration-none h-100">
+                      <span class="small fw-semibold text-dark">Sobremesas</span>
                     </a>
                   </li>
           
                 </ul>
               </nav>
-          
             </div>
           </section>
           <!-- ================================
@@ -325,15 +316,18 @@
           ================================ -->
           <section id="destaques" class="py-5 section-destaques" aria-labelledby="titulo-destaques">
             <div class="container">
-              <h2 class="text-center mb-5 fw-bold text-danger" id="titulo-destaques">
-                Destaques do Cardápio
-              </h2>
+              <h2 
+              id="titulo-cardapio-hamburguer" 
+              class="text-center fw-bold mb-5" 
+              style="font-family: var(--font-title); color: var(--color-primary-brown);">
+              Destaques da Casa
+            </h2>
               <div class="row g-4" role="list">
 
                 <!-- Clássico da Casa -->
                 <article class="col-lg-4 col-md-6" role="listitem">
                   <div class="card h-100 shadow-sm border-0">
-                    <img src="./assets/img/cards/card1.png" class="card-img-top" alt="Hambúrguer Clássico com pão brioche, hambúrguer 180g e maionese especial">
+                    <img src="./assets/img/cards/classico.png" class="card-img-top" alt="Hambúrguer Clássico com pão brioche, hambúrguer 180g e maionese especial">
                     <div class="card-body d-flex flex-column">
                       <h3 class="card-title fw-bold h5 d-flex justify-content-between align-items-center text-danger">
                         Clássico da Casa 
@@ -363,10 +357,10 @@
                 <!-- Veggie Delight -->
                 <article class="col-lg-4 col-md-6" role="listitem">
                   <div class="card h-100 shadow-sm border-0">
-                    <img src="./assets/img/cards/card2.png" class="card-img-top" alt="Hambúrguer vegetariano com grão-de-bico, salada e maionese vegana">
+                    <img src="./assets/img/cards/especial.png" class="card-img-top" alt="Hambúrguer vegetariano com grão-de-bico, salada e maionese vegana">
                     <div class="card-body d-flex flex-column">
                       <h3 class="card-title fw-bold h5 d-flex justify-content-between align-items-center text-success">
-                        Veggie Delight 
+                        X-Salada Master 
                         <span class="badge bg-success" title="Opção vegetariana">🥬</span>
                       </h3>
                       <p class="card-text small">
@@ -393,10 +387,10 @@
                 <!-- Sunset BBQ -->
                 <article class="col-lg-4 col-md-6" role="listitem">
                   <div class="card h-100 shadow-sm border-0">
-                    <img src="./assets/img/cards/card3.png" class="card-img-top" alt="Hambúrguer defumado com molho barbecue e cebola crispy">
+                    <img src="./assets/img/cards/combo.png" class="card-img-top" alt="Hambúrguer defumado com molho barbecue e cebola crispy">
                     <div class="card-body d-flex flex-column">
                       <h3 class="card-title fw-bold h5 d-flex justify-content-between align-items-center text-warning">
-                        Sunset BBQ 
+                        Combo Rei
                         <span class="badge bg-warning text-dark" title="Sabor defumado">🌅</span>
                       </h3>
                       <p class="card-text small">
@@ -409,17 +403,16 @@
                         <button class="btn btn-outline-secondary btn-sm px-2 py-1 ms-2 btn-quantidade" data-action="mais">+</button>
                       </div>
                       <div class="mt-auto d-flex flex-column gap-2">
-                        <button class="btn btn-outline-warning btn-sm py-1 w-100 text-dark btn-add-carrinho" data-produto="Sunset BBQ" data-preco="32.50">
+                        <button class="btn btn-outline-warning btn-sm py-1 w-100 text-yellow-hover btn-add-carrinho" data-produto="Sunset BBQ" data-preco="32.50">
                           Adicionar ao carrinho
                         </button>
-                        <button class="btn btn-warning btn-sm py-1 w-100 text-dark btn-pedir" data-produto="Sunset BBQ" data-preco="32.50">
+                        <button class="btn btn-warning btn-sm py-1 w-100 text-white btn-pedir" data-produto="Sunset BBQ" data-preco="32.50">
                           Comprar agora
                         </button>
                       </div>
                     </div>
                   </div>
                 </article>
-
               </div>
 
               <!-- Link para o cardápio completo -->
@@ -430,14 +423,9 @@
               </div>
             </div>
           </section>
-
-
-          <!-- ================================
-              🍔 SEÇÃO: CARDÁPIO DE HAMBÚRGUERES
-        ================================ -->
-        <!-- ================================
-      🍔 Seção - Cardápio de Hambúrgueres
-      ================================ -->
+            <!-- ================================
+          🍔 Seção - Cardápio de Hambúrgueres
+          ================================ -->
           <section 
             id="cardapio-hamburguer" 
             class="py-5 section-cardapio" 
@@ -454,85 +442,225 @@
               <!-- 🍔 Cards dos Hambúrgueres -->
               <div class="row g-4" id="hamburgueres-container" role="list">
                 <!-- 🔥 Grupo 1 -->
-                <article class="col-lg-4 col-md-6 card-item-grupo" data-group="1" role="listitem">
-                  <div class="card h-100 shadow-sm border-0 card-destaque">
-                    <img src="./assets/img/cards/card1.png" class="card-img-top" alt="Hambúrguer Clássico da Casa com pão brioche e maionese especial">
-                    <div class="card-body">
-                      <h3 class="card-title fw-bold h5">Clássico da Casa</h3>
-                      <p class="card-text small">Pão brioche, hambúrguer 180g, cheddar e maionese especial.</p>
-                      <p class="fw-bold text-dark">R$ 28,90</p>
-                      <a href="#" target="_blank" class="btn btn-sm text-white btn-pedir" style="background-color: var(--btn-mustard);">
-                        Pedir agora
-                      </a>
+                <article class="col-lg-4 col-md-6" role="listitem">
+                  <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                    <img src="./assets/img/cards/classico.png" class="card-img-top rounded-top-4" alt="Hambúrguer Clássico com pão brioche, hambúrguer 180g e maionese especial">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title fw-bold h5 d-flex justify-content-between align-items-center text-dark">
+                        Clássico da Casa
+                        <span class="badge bg-warning text-dark" title="Mais pedido da semana">🔥</span>
+                      </h3>
+                      <p class="card-text small text-secondary">
+                        Pão brioche, hambúrguer 180g, queijo cheddar e maionese especial da casa.
+                      </p>
+                      <p class="fw-bold text-danger fs-6 mb-2">R$ 28,90</p>
+
+                      <!-- Quantidade -->
+                      <div class="d-flex align-items-center mb-3">
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1 me-2 btn-quantidade" data-action="menos">−</button>
+                        <span class="quantidade fs-6 fw-semibold">1</span>
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1 ms-2 btn-quantidade" data-action="mais">+</button>
+                      </div>
+
+                      <!-- Ações -->
+                      <div class="mt-auto d-flex flex-column gap-2">
+                        <button 
+                          class="btn btn-outline-dark btn-sm py-2 fw-semibold w-100 btn-add-carrinho"
+                          data-produto="Clássico da Casa" 
+                          data-preco="28.90">
+                          Adicionar ao carrinho
+                        </button>
+                        <button 
+                          class="btn btn-danger btn-sm py-2 fw-semibold w-100 text-white btn-pedir" 
+                          data-produto="Clássico da Casa" 
+                          data-preco="28.90">
+                          Comprar agora
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </article>
-                <article class="col-lg-4 col-md-6 card-item-grupo" data-group="1" role="listitem">
-                  <div class="card h-100 shadow-sm border-0 card-destaque">
-                    <img src="./assets/img/cards/card2.png" class="card-img-top" alt="Veggie Delight com pão integral e hambúrguer de grão de bico">
-                    <div class="card-body">
-                      <h3 class="card-title fw-bold h5">Veggie Delight</h3>
-                      <p class="card-text small">Pão integral, hambúrguer de grão de bico, alface e molho verde.</p>
-                      <p class="fw-bold text-dark">R$ 26,90</p>
-                      <a href="#" target="_blank" class="btn btn-sm text-white btn-pedir" style="background-color: var(--btn-mustard);">
-                        Pedir agora
-                      </a>
+                <!-- 🍔 Card Exemplo -->
+                <article class="col-lg-4 col-md-6" role="listitem">
+                  <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                    <img src="./assets/img/cards/classico.png" class="card-img-top rounded-top-4" alt="Hambúrguer Clássico com pão brioche, hambúrguer 180g e maionese especial">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title fw-bold h5 d-flex justify-content-between align-items-center text-dark">
+                        Clássico da Casa
+                        <span class="badge bg-warning text-dark" title="Mais pedido da semana">🔥</span>
+                      </h3>
+                      <p class="card-text small text-secondary">
+                        Pão brioche, hambúrguer 180g, queijo cheddar e maionese especial da casa.
+                      </p>
+                      <p class="fw-bold text-danger fs-6 mb-2">R$ 28,90</p>
+
+                      <!-- Quantidade -->
+                      <div class="d-flex align-items-center mb-3">
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1 me-2 btn-quantidade" data-action="menos">−</button>
+                        <span class="quantidade fs-6 fw-semibold">1</span>
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1 ms-2 btn-quantidade" data-action="mais">+</button>
+                      </div>
+
+                      <!-- Ações -->
+                      <div class="mt-auto d-flex flex-column gap-2">
+                        <button 
+                          class="btn btn-outline-dark btn-sm py-2 fw-semibold w-100 btn-add-carrinho"
+                          data-produto="Clássico da Casa" 
+                          data-preco="28.90">
+                          Adicionar ao carrinho
+                        </button>
+                        <button 
+                          class="btn btn-danger btn-sm py-2 fw-semibold w-100 text-white btn-pedir" 
+                          data-produto="Clássico da Casa" 
+                          data-preco="28.90">
+                          Comprar agora
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </article>
-                <article class="col-lg-4 col-md-6 card-item-grupo" data-group="1" role="listitem">
-                  <div class="card h-100 shadow-sm border-0 card-destaque">
-                    <img src="./assets/img/cards/card3.png" class="card-img-top" alt="Sunset BBQ com bacon, cheddar duplo e barbecue artesanal">
-                    <div class="card-body">
-                      <h3 class="card-title fw-bold h5">Sunset BBQ</h3>
-                      <p class="card-text small">Pão australiano, hambúrguer 200g, bacon, cheddar duplo e barbecue.</p>
-                      <p class="fw-bold text-dark">R$ 32,90</p>
-                      <a href="#" target="_blank" class="btn btn-sm text-white btn-pedir" style="background-color: var(--btn-mustard);">
-                        Pedir agora
-                      </a>
+                <!-- 🍔 Card Exemplo -->
+                <article class="col-lg-4 col-md-6" role="listitem">
+                  <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                    <img src="./assets/img/cards/classico.png" class="card-img-top rounded-top-4" alt="Hambúrguer Clássico com pão brioche, hambúrguer 180g e maionese especial">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title fw-bold h5 d-flex justify-content-between align-items-center text-dark">
+                        Clássico da Casa
+                        <span class="badge bg-warning text-dark" title="Mais pedido da semana">🔥</span>
+                      </h3>
+                      <p class="card-text small text-secondary">
+                        Pão brioche, hambúrguer 180g, queijo cheddar e maionese especial da casa.
+                      </p>
+                      <p class="fw-bold text-danger fs-6 mb-2">R$ 28,90</p>
+
+                      <!-- Quantidade -->
+                      <div class="d-flex align-items-center mb-3">
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1 me-2 btn-quantidade" data-action="menos">−</button>
+                        <span class="quantidade fs-6 fw-semibold">1</span>
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1 ms-2 btn-quantidade" data-action="mais">+</button>
+                      </div>
+
+                      <!-- Ações -->
+                      <div class="mt-auto d-flex flex-column gap-2">
+                        <button 
+                          class="btn btn-outline-dark btn-sm py-2 fw-semibold w-100 btn-add-carrinho"
+                          data-produto="Clássico da Casa" 
+                          data-preco="28.90">
+                          Adicionar ao carrinho
+                        </button>
+                        <button 
+                          class="btn btn-danger btn-sm py-2 fw-semibold w-100 text-white btn-pedir" 
+                          data-produto="Clássico da Casa" 
+                          data-preco="28.90">
+                          Comprar agora
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </article>
                 <!-- 🍔 Grupo 2 (inicialmente oculto) -->
                 <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2" role="listitem">
-                  <div class="card h-100 shadow-sm border-0 card-destaque">
-                    <img src="./assets/img/cards/card2.png" class="card-img-top" alt="Double Cheddar com cheddar duplo e cebola crispy">
-                    <div class="card-body">
-                      <h3 class="card-title fw-bold h5">Double Cheddar</h3>
-                      <p class="card-text small">Pão brioche, 2 hambúrgueres, cheddar duplo e cebola crispy.</p>
-                      <p class="fw-bold text-dark">R$ 34,90</p>
-                      <a href="#" target="_blank" class="btn btn-sm text-white btn-pedir" style="background-color: var(--btn-mustard);">
-                        Pedir agora
-                      </a>
+                  <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                    <img src="./assets/img/cards/card2.png" class="card-img-top rounded-top-4" alt="Double Cheddar com cheddar duplo e cebola crispy">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title fw-bold h5 text-dark">Double Cheddar</h3>
+                      <p class="card-text small text-secondary">
+                        Pão brioche, 2 hambúrgueres, cheddar duplo e cebola crispy.
+                      </p>
+                      <p class="fw-bold text-danger fs-6 mb-2">R$ 34,90</p>
+
+                      <div class="d-flex align-items-center mb-3">
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1 me-2 btn-quantidade" data-action="menos">−</button>
+                        <span class="quantidade fs-6 fw-semibold">1</span>
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1 ms-2 btn-quantidade" data-action="mais">+</button>
+                      </div>
+
+                      <div class="mt-auto d-flex flex-column gap-2">
+                        <button 
+                          class="btn btn-outline-dark btn-sm py-2 fw-semibold w-100 btn-add-carrinho"
+                          data-produto="Double Cheddar" 
+                          data-preco="34.90">
+                          Adicionar ao carrinho
+                        </button>
+                        <button 
+                          class="btn btn-danger btn-sm py-2 fw-semibold w-100 text-white btn-pedir" 
+                          data-produto="Double Cheddar" 
+                          data-preco="34.90">
+                          Comprar agora
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </article>
+                 <!-- 🍔 Card Exemplo -->
                 <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2" role="listitem">
-                  <div class="card h-100 shadow-sm border-0 card-destaque">
-                    <img src="./assets/img/cards/card3.png" class="card-img-top" alt="Texano Picante com jalapeño e molho picante">
-                    <div class="card-body">
-                      <h3 class="card-title fw-bold h5">Texano Picante</h3>
-                      <p class="card-text small">Pão rústico, hambúrguer 180g, jalapeño, cheddar e molho picante.</p>
-                      <p class="fw-bold text-dark">R$ 30,90</p>
-                      <a href="#" target="_blank" class="btn btn-sm text-white btn-pedir" style="background-color: var(--btn-mustard);">
-                        Pedir agora
-                      </a>
+                  <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                    <img src="./assets/img/cards/card3.png" class="card-img-top rounded-top-4" alt="Texano Picante com jalapeño e molho picante">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title fw-bold h5 text-dark">Texano Picante</h3>
+                      <p class="card-text small text-secondary">
+                        Pão rústico, hambúrguer 180g, jalapeño, cheddar e molho picante.
+                      </p>
+                      <p class="fw-bold text-danger fs-6 mb-2">R$ 30,90</p>
+
+                      <div class="d-flex align-items-center mb-3">
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1 me-2 btn-quantidade" data-action="menos">−</button>
+                        <span class="quantidade fs-6 fw-semibold">1</span>
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1 ms-2 btn-quantidade" data-action="mais">+</button>
+                      </div>
+
+                      <div class="mt-auto d-flex flex-column gap-2">
+                        <button 
+                          class="btn btn-outline-dark btn-sm py-2 fw-semibold w-100 btn-add-carrinho"
+                          data-produto="Texano Picante" 
+                          data-preco="30.90">
+                          Adicionar ao carrinho
+                        </button>
+                        <button 
+                          class="btn btn-danger btn-sm py-2 fw-semibold w-100 text-white btn-pedir" 
+                          data-produto="Texano Picante" 
+                          data-preco="30.90">
+                          Comprar agora
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </article>
+                <!-- 🍔 Card Exemplo -->
                 <article class="col-lg-4 col-md-6 card-item-grupo d-none" data-group="2" role="listitem">
-                  <div class="card h-100 shadow-sm border-0 card-destaque">
-                    <img src="./assets/img/cards/card1.png" class="card-img-top" alt="Barbecue Supreme com cebola caramelizada e molho BBQ">
-                    <div class="card-body">
-                      <h3 class="card-title fw-bold h5">Barbecue Supreme</h3>
-                      <p class="card-text small">Pão australiano, hambúrguer 200g, cheddar, cebola caramelizada e BBQ.</p>
-                      <p class="fw-bold text-dark">R$ 33,90</p>
-                      <a href="#" target="_blank" class="btn btn-sm text-white btn-pedir" style="background-color: var(--btn-mustard);">
-                        Pedir agora
-                      </a>
+                  <div class="card h-100 shadow rounded-4 border-0 bg-light">
+                    <img src="./assets/img/cards/card1.png" class="card-img-top rounded-top-4" alt="Barbecue Supreme com cebola caramelizada e molho BBQ">
+                    <div class="card-body d-flex flex-column">
+                      <h3 class="card-title fw-bold h5 text-dark">Barbecue Supreme</h3>
+                      <p class="card-text small text-secondary">
+                        Pão australiano, hambúrguer 200g, cheddar, cebola caramelizada e molho BBQ.
+                      </p>
+                      <p class="fw-bold text-danger fs-6 mb-2">R$ 33,90</p>
+
+                      <div class="d-flex align-items-center mb-3">
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1 me-2 btn-quantidade" data-action="menos">−</button>
+                        <span class="quantidade fs-6 fw-semibold">1</span>
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1 ms-2 btn-quantidade" data-action="mais">+</button>
+                      </div>
+
+                      <div class="mt-auto d-flex flex-column gap-2">
+                        <button 
+                          class="btn btn-outline-dark btn-sm py-2 fw-semibold w-100 btn-add-carrinho"
+                          data-produto="Barbecue Supreme" 
+                          data-preco="33.90">
+                          Adicionar ao carrinho
+                        </button>
+                        <button 
+                          class="btn btn-danger btn-sm py-2 fw-semibold w-100 text-white btn-pedir" 
+                          data-produto="Barbecue Supreme" 
+                          data-preco="33.90">
+                          Comprar agora
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </article>
+
               </div>
               <!-- 📍 Botão Ver Mais / Ver Menos -->
               <div class="text-center mt-4">
